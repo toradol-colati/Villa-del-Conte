@@ -1026,3 +1026,32 @@ main > .contact-section { animation-delay: 3.5s; }
     .lightbox-prev { left: 5px; }
     .lightbox-next { right: 5px; }
 }
+
+/* === CRITICAL MOBILE FIXES === */
+@media (max-width: 768px) {
+  .nav-tabs {
+    gap: 15px; /* Reduce massive gap that forces horizontal scroll */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-btn {
+    padding: 10px 5px;
+    font-size: 1rem;
+  }
+
+  .logo-section {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .logo-image {
+    max-width: 100%;
+  }
+  
+  /* Assicuriamoci che niente causi scroll orizzontale */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
