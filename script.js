@@ -113,25 +113,65 @@ document.addEventListener('DOMContentLoaded', () => {
         const catsContainer = document.getElementById(catsId);
         if (!gallery || !galleryData[propertyKey]) return;
 
+        // Hide the category container permanently
+        if (catsContainer) catsContainer.style.display = 'none';
+
         const imageElement = gallery.querySelector('.property-image');
         const prevBtn = gallery.querySelector('.prev-btn');
         const nextBtn = gallery.querySelector('.next-btn');
 
-        let currentCategory = 'Tutte';
         let currentIndex = 0;
 
         function updateImage() {
-            const imgs = galleryData[propertyKey][currentCategory];
+            const imgs = galleryData[propertyKey]['Tutte'];
             if (imgs && imgs.length > 0) {
                 imageElement.src = imgs[currentIndex];
+                
+                let label = gallery.querySelector('.carousel-label');
+                if (!label) {
+                    label = document.createElement('div');
+                    label.className = 'carousel-label fade-in';
+                    const imgContainer = imageElement.parentElement;
+                    imgContainer.style.position = 'relative'; 
+                    imgContainer.appendChild(label);
+                }
+                
+                const parts = imgs[currentIndex].split('/');
+                let catText = parts.length > 2 ? parts[2] : "";
+                
+                catText = catText.replace('salone&cucina', 'Salotto / Cucina')
+                                 .replace('giardino', 'Piscina & Giardino')
+                                 .replace('esterno', 'Esterno')
+                                 .replace('bagno', 'Bagno')
+                                 .replace('stanza ', 'Stanza ')
+                                 .replace('stanza', 'Stanza');
+                                 
+                catText = catText.charAt(0).toUpperCase() + catText.slice(1);
+                label.textContent = catText;
             }
         }
 
         nextBtn.addEventListener('click', () => {
-            const len = galleryData[propertyKey][currentCategory].length;
+            const len = galleryData[propertyKey]['Tutte'].length;
             currentIndex = (currentIndex + 1) % len;
             updateImage();
         });
+
+        prevBtn.addEventListener('click', () => {
+            const len = galleryData[propertyKey]['Tutte'].length;
+            currentIndex = (currentIndex - 1 + len) % len;
+            updateImage();
+        });
+        
+        // Open lightbox bridging logic
+        imageElement.addEventListener('click', function(e) {
+            window.lbCurrentArray = galleryData[propertyKey]['Tutte'];
+            window.lbCurrentIndex = currentIndex;
+            window.openLightboxWithArray();
+        });
+
+        updateImage();
+    });
 
         prevBtn.addEventListener('click', () => {
             const len = galleryData[propertyKey][currentCategory].length;
@@ -289,18 +329,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const maxImg = document.createElement('img');
     maxImg.className = 'lightbox-content';
     maxImg.id = 'lightbox-img';
+    
+    const lbPrev = document.createElement('span');
+    lbPrev.className = 'lightbox-nav lightbox-prev';
+    lbPrev.innerHTML = '&#10094;';
+
+    const lbNext = document.createElement('span');
+    lbNext.className = 'lightbox-nav lightbox-next';
+    lbNext.innerHTML = '&#10095;';
 
     lightbox.appendChild(closeBtn);
+    lightbox.appendChild(lbPrev);
+    lightbox.appendChild(lbNext);
     lightbox.appendChild(maxImg);
     document.body.appendChild(lightbox);
+    
+    window.lbCurrentArray = [];
+    window.lbCurrentIndex = 0;
 
-    const lbImages = document.querySelectorAll('.property-image');
-    lbImages.forEach(img => {
-        img.addEventListener('click', function () {
-            lightbox.classList.add('show');
-            maxImg.src = this.src;
-            document.body.style.overflow = 'hidden';
-        });
+    window.openLightboxWithArray = function() {
+        lightbox.style.display = 'flex';
+        setTimeout(() => lightbox.classList.add('show'), 10);
+        maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
+        document.body.style.overflow = 'hidden';
+    };
+
+    function updateLightboxImg() {
+        if(window.lbCurrentArray && window.lbCurrentArray.length > 0) {
+            maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
+        }
+    }
+
+    lbPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.lbCurrentIndex = (window.lbCurrentIndex - 1 + window.lbCurrentArray.length) % window.lbCurrentArray.length;
+        updateLightboxImg();
+    });
+
+    lbNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.lbCurrentIndex = (window.lbCurrentIndex + 1) % window.lbCurrentArray.length;
+        updateLightboxImg();
     });
 
     function closeLightbox() {
@@ -308,20 +377,19 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             lightbox.style.display = 'none';
             document.body.style.overflow = 'auto';
-        }, 300); // match transition
+        }, 300);
     }
 
-    // Fix display block issue by overriding default hide gracefully
-    lbImages.forEach(img => {
-        img.addEventListener('click', function () {
-            lightbox.style.display = 'flex';
-            setTimeout(() => lightbox.classList.add('show'), 10);
-            maxImg.src = this.src;
-            document.body.style.overflow = 'hidden';
-        });
-    });
-
     closeBtn.addEventListener('click', closeLightbox);
+    
+    // Support left/right arrow keys
+    document.addEventListener('keydown', (e) => {
+        if(lightbox.classList.contains('show')) {
+            if(e.key === 'ArrowLeft') lbPrev.click();
+            if(e.key === 'ArrowRight') lbNext.click();
+            if(e.key === 'Escape') closeLightbox();
+        }
+    });
 
     lightbox.addEventListener('click', function (e) {
         if (e.target === lightbox) {
