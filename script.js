@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let catText = parts.length > 2 ? parts[2] : "";
                 
                 catText = catText.replace('salone&cucina', 'Salotto / Cucina')
-                                 .replace('giardino', 'Piscina & Giardino')
+                                 .replace('giardino', 'Giardino')
                                  .replace('esterno', 'Esterno')
                                  .replace('bagno', 'Bagno')
                                  .replace('stanza ', 'Stanza ')
