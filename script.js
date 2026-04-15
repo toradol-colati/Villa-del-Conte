@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const catsContainer = document.getElementById(catsId);
         if (!gallery || !galleryData[propertyKey]) return;
 
-        // Hide the category container permanently
         if (catsContainer) catsContainer.style.display = 'none';
 
         const imageElement = gallery.querySelector('.property-image');
@@ -163,44 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
             updateImage();
         });
         
-        // Open lightbox bridging logic
         imageElement.addEventListener('click', function(e) {
             window.lbCurrentArray = galleryData[propertyKey]['Tutte'];
             window.lbCurrentIndex = currentIndex;
             window.openLightboxWithArray();
         });
-
-        updateImage();
-    });
-
-        prevBtn.addEventListener('click', () => {
-            const len = galleryData[propertyKey][currentCategory].length;
-            currentIndex = (currentIndex - 1 + len) % len;
-            updateImage();
-        });
-
-        if (catsContainer) {
-            catsContainer.innerHTML = '';
-            const catsObj = galleryData[propertyKey];
-            const cats = ['Tutte', ...Object.keys(catsObj).filter(c => c !== 'Tutte')];
-
-            cats.forEach(cat => {
-                const btn = document.createElement('button');
-                btn.className = 'carousel-cat-btn' + (cat === 'Tutte' ? ' active' : '');
-                btn.textContent = cat;
-
-                btn.addEventListener('click', () => {
-                    catsContainer.querySelectorAll('.carousel-cat-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    currentCategory = cat;
-                    currentIndex = 0;
-                    updateImage();
-                });
-
-                catsContainer.appendChild(btn);
-            });
-        }
 
         updateImage();
     }
