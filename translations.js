@@ -20,8 +20,8 @@ const translations = {
         
         "contact_banner": "— <em>contattaci</em> per prenotare ed ottenere uno <strong>SCONTO!</strong> —",
         
-        "form_title": "Richiesta di Prenotazione",
-        "form_subtitle": "Compila il modulo, ti risponderemo tempestivamente.",
+        "form_title": "Richiesta di informazioni",
+        "form_subtitle": "Ti risponderemo tempestivamente.",
         "form_email": "Email *",
         "form_phone": "Telefono *",
         "form_checkin": "Check-in",
