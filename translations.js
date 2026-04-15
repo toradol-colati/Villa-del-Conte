@@ -35,7 +35,7 @@ const translations = {
         "form_submit": "Invia Richiesta",
         
         "about_intro_title": "La Nostra Accoglienza",
-        "about_intro_p1": "Benvenuti a Villa del Conte. Da anni ci dedichiamo all'ospitalità, aprendo le porte di una delle zone più affascinanti della Costa degli Dei. Il nostro obiettivo è farvi sentire a casa, offrendovi ambienti curati in un contesto sereno e vicino al mare, per garantirvi una vacanza indimenticabile unendo modernità a tradizione.",
+        "about_intro_p1": "Ci dedichiamo all'ospitalità, aprendo le porte di una delle zone più affascinanti della Costa degli Dei. Il nostro obiettivo è farvi sentire a casa, offrendovi ambienti curati in un contesto sereno e vicino al mare, per garantirvi una vacanza indimenticabile unendo modernità a tradizione.",
         
         "about_desc_1": "Ci troviamo a 4.4km da Tropea, precisamente a Santa Domenica di Ricadi e sulla Costa degli Dei, nota per le spiagge mozzafiato ed il mare cristallino.",
         "about_desc_2": "La zona offre ristoranti, bar, negozi e tutti i comfort per una vacanza rilassante ed in pochi minuti è possibile raggiungere Capo Vaticano e Tropea.",
@@ -96,7 +96,7 @@ const translations = {
         "form_submit": "Send Request",
         
         "about_intro_title": "Our Hospitality",
-        "about_intro_p1": "Welcome to Villa del Conte. For years we have been dedicated to hospitality, opening the doors to one of the most fascinating areas of the Costa degli Dei. Our goal is to make you feel at home, ensuring an unforgettable holiday.",
+        "about_intro_p1": "We are dedicated to hospitality, opening the doors to one of the most fascinating areas of the Costa degli Dei. Our goal is to make you feel at home, ensuring an unforgettable holiday.",
         
         "about_desc_1": "We are located 4.4km from Tropea, precisely in Santa Domenica di Ricadi on the Costa degli Dei, known for its breathtaking beaches and crystal-clear sea.",
         "about_desc_2": "The area offers restaurants, bars, shops, and all comforts for a relaxing holiday, and in a few minutes you can reach Capo Vaticano and Tropea.",
@@ -157,7 +157,7 @@ const translations = {
         "form_submit": "Enviar Solicitud",
         
         "about_intro_title": "Nuestra Hospitalidad",
-        "about_intro_p1": "Bienvenidos a Villa del Conte. Durante años nos hemos dedicado a la hospitalidad, abriendo las puertas de una de las zonas más fascinantes de la costa.",
+        "about_intro_p1": "Nos dedicamos a la hospitalidad, abriendo las puertas de una de las zonas más fascinantes de la costa.",
         
         "about_desc_1": "Estamos situados a 4,4km de Tropea, concretamente en Santa Domenica di Ricadi y en la Costa degli Dei, conocida por sus impresionantes playas y su mar cristalino.",
         "about_desc_2": "La zona ofrece restaurantes, bares, tiendas y todas las comodidades para unas vacaciones relajantes, y en pocos minutos se puede llegar a Capo Vaticano y Tropea.",
@@ -218,7 +218,7 @@ const translations = {
         "form_submit": "Отправить Запрос",
         
         "about_intro_title": "Наше гостеприимство",
-        "about_intro_p1": "Добро пожаловать на Виллу дель Конте. В течение многих лет мы посвятили себя гостеприимству, открывая двери в одни из самых увлекательных районов побережья.",
+        "about_intro_p1": "Мы посвятили себя гостеприимству, открывая двери в одни из самых увлекательных районов побережья.",
         
         "about_desc_1": "Мы находимся в 4,4 км от Тропеи, в Санта-Доменика-ди-Рикади на Побережье Богов, известном своими захватывающими дух пляжами и кристально чистым морем.",
         "about_desc_2": "В районе есть рестораны, бары, магазины и все удобства для спокойного отдыха, а за несколько минут можно добраться до мыса Ватикан и Тропеи.",
@@ -279,7 +279,7 @@ const translations = {
         "form_submit": "Anfrage Senden",
         
         "about_intro_title": "Unsere Gastfreundschaft",
-        "about_intro_p1": "Willkommen in der Villa del Conte. Seit Jahren widmen wir uns der Gastfreundschaft und öffnen die Türen zu einem der faszinierendsten Gebiete der Costa.",
+        "about_intro_p1": "Wir widmen uns der Gastfreundschaft und öffnen die Türen zu einem der faszinierendsten Gebiete der Costa.",
         
         "about_desc_1": "Wir befinden uns 4,4 km von Tropea entfernt, in Santa Domenica di Ricadi an der Costa degli Dei (Küste der Götter), bekannt für ihre atemberaubenden Strände und das kristallklare Meer.",
         "about_desc_2": "Die Gegend bietet Restaurants, Bars, Geschäfte und allen Komfort für einen erholsamen Urlaub, und in wenigen Minuten erreichen Sie Capo Vaticano und Tropea.",
@@ -340,7 +340,7 @@ const translations = {
         "form_submit": "发送请求",
         
         "about_intro_title": "我们的热情好客",
-        "about_intro_p1": "欢迎来到康特别墅。多年来，我们一直致力为您打开通往众神海岸迷人地区的大门。",
+        "about_intro_p1": "我们致力为您打开通往众神海岸迷人地区的大门。",
         
         "about_desc_1": "我们距离特罗佩亚 (Tropea) 4.4 公里，就在众神海岸 (Costa degli Dei) 的里卡迪圣多梅尼卡 (Santa Domenica di Ricadi)，以其令人惊叹的海滩和水晶般清澈的海水而闻名。",
         "about_desc_2": "该地区设有餐厅、酒吧、商店和所有适合放松度假的设施，几分钟内您就可以到达梵蒂冈角 (Capo Vaticano) 和特罗佩亚。",
