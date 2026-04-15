@@ -13,23 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/villa/giardino/E35C3DB7-9DA4-45FC-8C37-E52FE5D2E582_4_5005_c.jpeg",
             "images/villa/giardino/FC48C6C8-2DD0-4ACC-B66E-6DC6BD20549E_1_105_c.jpeg"
         ],
-        "stanza 2": [
-            "images/villa/stanza 2/04FD21C3-8C04-440F-B27E-E28CD0FCE02D_4_5005_c.jpeg",
-            "images/villa/stanza 2/167AB6BE-CA0E-4D07-898C-514027A0280B_4_5005_c.jpeg",
-            "images/villa/stanza 2/66E2FC4D-C8C3-4081-95B0-DA076704FA44_4_5005_c.jpeg"
-        ],
-        "stanza 3": [
-            "images/villa/stanza 3/8037F6AB-B5A0-4EB9-9FA1-97F843835080_4_5005_c.jpeg",
-            "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg"
-        ],
         "salone&cucina": [
-            "images/villa/salone&cucina/2473F8BB-1549-41AE-8E8B-C0615BC214C2_4_5005_c.jpeg",
-            "images/villa/salone&cucina/DSC_0083.JPG",
             "images/villa/salone&cucina/DSC_0085.JPG",
             "images/villa/salone&cucina/DSC_0090.JPG",
-            "images/villa/salone&cucina/DSC_0094.JPG",
             "images/villa/salone&cucina/DSC_0099.JPG",
-            "images/villa/salone&cucina/DSC_0100.JPG",
             "images/villa/salone&cucina/DSC_0104.JPG",
             "images/villa/salone&cucina/DSC_0111.JPG"
         ],
@@ -40,6 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/villa/stanza 1/6A87A1E1-CFE5-4B9B-82BB-B7855E1C01B2_4_5005_c.jpeg",
             "images/villa/stanza 1/95531917-55C8-4B29-B6EB-F934DAF3F566_4_5005_c.jpeg"
         ],
+        "stanza 2": [
+            "images/villa/stanza 2/04FD21C3-8C04-440F-B27E-E28CD0FCE02D_4_5005_c.jpeg",
+            "images/villa/stanza 2/167AB6BE-CA0E-4D07-898C-514027A0280B_4_5005_c.jpeg",
+            "images/villa/stanza 2/66E2FC4D-C8C3-4081-95B0-DA076704FA44_4_5005_c.jpeg"
+        ],
+        "stanza 3": [
+            "images/villa/stanza 3/8037F6AB-B5A0-4EB9-9FA1-97F843835080_4_5005_c.jpeg",
+            "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg"
+        ],
         "Tutte": [
             "images/villa/giardino/26EA642B-36BE-4AB2-995D-C0369173014E_4_5005_c.jpeg",
             "images/villa/giardino/4268B1BD-1472-4D5E-9817-43D37EA16A31_4_5005_c.jpeg",
@@ -49,13 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/villa/giardino/9A504C58-C365-4B6E-A001-A5F8963D3B91_1_105_c.jpeg",
             "images/villa/giardino/E35C3DB7-9DA4-45FC-8C37-E52FE5D2E582_4_5005_c.jpeg",
             "images/villa/giardino/FC48C6C8-2DD0-4ACC-B66E-6DC6BD20549E_1_105_c.jpeg",
-            "images/villa/salone&cucina/2473F8BB-1549-41AE-8E8B-C0615BC214C2_4_5005_c.jpeg",
-            "images/villa/salone&cucina/DSC_0083.JPG",
             "images/villa/salone&cucina/DSC_0085.JPG",
             "images/villa/salone&cucina/DSC_0090.JPG",
-            "images/villa/salone&cucina/DSC_0094.JPG",
             "images/villa/salone&cucina/DSC_0099.JPG",
-            "images/villa/salone&cucina/DSC_0100.JPG",
             "images/villa/salone&cucina/DSC_0104.JPG",
             "images/villa/salone&cucina/DSC_0111.JPG",
             "images/villa/stanza 1/1AF6C193-C0ED-4977-9D61-02CE8AFBAE62_4_5005_c.jpeg",
@@ -71,20 +63,24 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     },
     "conte": {
-        "bagno": [
-            "images/house/bagno/DSC_0079.JPG",
-            "images/house/bagno/DSC_0130.JPG"
+        "salone&cucina": [
+            "images/house/salone&cucina/DSC_0025.JPG",
+            "images/house/salone&cucina/DSC_0028.JPG",
+            "images/house/salone&cucina/DSC_0032.JPG",
+            "images/house/salone&cucina/DSC_0061.JPG",
+            "images/house/salone&cucina/DSC_0066.JPG",
+            "images/house/salone&cucina/DSC_0071.JPG"
         ],
         "stanza": [
             "images/house/stanza/DSC_0968.JPG",
-            "images/house/stanza/DSC_0969.JPG",
-            "images/house/stanza/DSC_0970.JPG",
-            "images/house/stanza/DSC_0971.JPG",
             "images/house/stanza/DSC_0984.JPG",
             "images/house/stanza/DSC_0987.JPG",
             "images/house/stanza/DSC_0997.JPG",
-            "images/house/stanza/DSC_0998.JPG",
             "images/house/stanza/DSC_1007.JPG"
+        ],
+        "bagno": [
+            "images/house/bagno/DSC_0079.JPG",
+            "images/house/bagno/DSC_0130.JPG"
         ],
         "esterno": [
             "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
@@ -92,44 +88,24 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
             "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
         ],
-        "salone&cucina": [
-            "images/house/salone&cucina/DSC_0025.JPG",
-            "images/house/salone&cucina/DSC_0028.JPG",
-            "images/house/salone&cucina/DSC_0029.JPG",
-            "images/house/salone&cucina/DSC_0032.JPG",
-            "images/house/salone&cucina/DSC_0053.JPG",
-            "images/house/salone&cucina/DSC_0061.JPG",
-            "images/house/salone&cucina/DSC_0065.JPG",
-            "images/house/salone&cucina/DSC_0066.JPG",
-            "images/house/salone&cucina/DSC_0070.JPG",
-            "images/house/salone&cucina/DSC_0071.JPG"
-        ],
         "Tutte": [
-            "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
-            "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
-            "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
-            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg",
             "images/house/salone&cucina/DSC_0025.JPG",
             "images/house/salone&cucina/DSC_0028.JPG",
-            "images/house/salone&cucina/DSC_0029.JPG",
             "images/house/salone&cucina/DSC_0032.JPG",
-            "images/house/salone&cucina/DSC_0053.JPG",
             "images/house/salone&cucina/DSC_0061.JPG",
-            "images/house/salone&cucina/DSC_0065.JPG",
             "images/house/salone&cucina/DSC_0066.JPG",
-            "images/house/salone&cucina/DSC_0070.JPG",
             "images/house/salone&cucina/DSC_0071.JPG",
-            "images/house/bagno/DSC_0079.JPG",
-            "images/house/bagno/DSC_0130.JPG",
             "images/house/stanza/DSC_0968.JPG",
-            "images/house/stanza/DSC_0969.JPG",
-            "images/house/stanza/DSC_0970.JPG",
-            "images/house/stanza/DSC_0971.JPG",
             "images/house/stanza/DSC_0984.JPG",
             "images/house/stanza/DSC_0987.JPG",
             "images/house/stanza/DSC_0997.JPG",
-            "images/house/stanza/DSC_0998.JPG",
-            "images/house/stanza/DSC_1007.JPG"
+            "images/house/stanza/DSC_1007.JPG",
+            "images/house/bagno/DSC_0079.JPG",
+            "images/house/bagno/DSC_0130.JPG",
+            "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
+            "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
+            "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
+            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
         ]
     }
 };
@@ -302,4 +278,57 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.remove('loading');
         }, 3000); 
     });
+
+    // === LIGHTBOX LOGIC ===
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.className = 'lightbox';
+    
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'lightbox-close';
+    closeBtn.innerHTML = '&times;';
+    
+    const maxImg = document.createElement('img');
+    maxImg.className = 'lightbox-content';
+    maxImg.id = 'lightbox-img';
+    
+    lightbox.appendChild(closeBtn);
+    lightbox.appendChild(maxImg);
+    document.body.appendChild(lightbox);
+    
+    const lbImages = document.querySelectorAll('.property-image');
+    lbImages.forEach(img => {
+        img.addEventListener('click', function(){
+            lightbox.classList.add('show');
+            maxImg.src = this.src;
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    function closeLightbox() {
+        lightbox.classList.remove('show');
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 300); // match transition
+    }
+
+    // Fix display block issue by overriding default hide gracefully
+    lbImages.forEach(img => {
+        img.addEventListener('click', function(){
+            lightbox.style.display = 'flex';
+            setTimeout(() => lightbox.classList.add('show'), 10);
+            maxImg.src = this.src;
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    closeBtn.addEventListener('click', closeLightbox);
+    
+    lightbox.addEventListener('click', function(e) {
+        if(e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
 });
