@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // === CAROUSEL LOGIC ===
-        const galleryData = {
+    const galleryData = {
     "villa": {
-        "bagno 1": [
-            "images/villa/bagno 1/DSC_0130.JPG"
-        ],
-        "bagno 2": [],
         "giardino": [
             "images/villa/giardino/26EA642B-36BE-4AB2-995D-C0369173014E_4_5005_c.jpeg",
             "images/villa/giardino/4268B1BD-1472-4D5E-9817-43D37EA16A31_4_5005_c.jpeg",
@@ -40,8 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/villa/stanza 3/8037F6AB-B5A0-4EB9-9FA1-97F843835080_4_5005_c.jpeg",
             "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg"
         ],
+        "bagno 1": [
+            "images/villa/bagno 1/DSC_0130.JPG"
+        ],
+        "bagno 2": [],
         "Tutte": [
-            "images/villa/bagno 1/DSC_0130.JPG",
             "images/villa/giardino/26EA642B-36BE-4AB2-995D-C0369173014E_4_5005_c.jpeg",
             "images/villa/giardino/4268B1BD-1472-4D5E-9817-43D37EA16A31_4_5005_c.jpeg",
             "images/villa/giardino/4EDED8F3-742B-4346-8A1B-1D50343EE903_1_105_c.jpeg",
@@ -64,22 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/villa/stanza 2/167AB6BE-CA0E-4D07-898C-514027A0280B_4_5005_c.jpeg",
             "images/villa/stanza 2/66E2FC4D-C8C3-4081-95B0-DA076704FA44_4_5005_c.jpeg",
             "images/villa/stanza 3/8037F6AB-B5A0-4EB9-9FA1-97F843835080_4_5005_c.jpeg",
-            "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg"
+            "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg",
+            "images/villa/bagno 1/DSC_0130.JPG"
         ]
     },
     "conte": {
-        "bagno": [
-            "images/house/bagno/DSC_0079.JPG",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg"
-        ],
-        "esterno": [
-            "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
-            "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
-            "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
-            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
-        ],
         "salone&cucina": [
             "images/house/salone&cucina/DSC_0025.JPG",
             "images/house/salone&cucina/DSC_0028.JPG",
@@ -95,15 +83,19 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/house/stanza/DSC_0997.JPG",
             "images/house/stanza/DSC_1007.JPG"
         ],
-        "Tutte": [
+        "bagno": [
             "images/house/bagno/DSC_0079.JPG",
             "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg",
             "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg",
+            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg"
+        ],
+        "esterno": [
             "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
             "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
             "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
-            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg",
+            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
+        ],
+        "Tutte": [
             "images/house/salone&cucina/DSC_0025.JPG",
             "images/house/salone&cucina/DSC_0028.JPG",
             "images/house/salone&cucina/DSC_0032.JPG",
@@ -114,7 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "images/house/stanza/DSC_0984.JPG",
             "images/house/stanza/DSC_0987.JPG",
             "images/house/stanza/DSC_0997.JPG",
-            "images/house/stanza/DSC_1007.JPG"
+            "images/house/stanza/DSC_1007.JPG",
+            "images/house/bagno/DSC_0079.JPG",
+            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg",
+            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg",
+            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg",
+            "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
+            "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
+            "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
+            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
         ]
     }
 };
@@ -176,6 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
         imageElement.addEventListener('click', function(e) {
             window.lbCurrentArray = galleryData[propertyKey]['Tutte'];
             window.lbCurrentIndex = currentIndex;
+            window.lbSyncCarousel = function(index) {
+                currentIndex = index;
+                updateImage();
+            };
             window.openLightboxWithArray();
         });
 
@@ -307,6 +311,13 @@ document.addEventListener('DOMContentLoaded', () => {
     maxImg.className = 'lightbox-content';
     maxImg.id = 'lightbox-img';
     
+    const lbLabel = document.createElement('div');
+    lbLabel.className = 'carousel-label fade-in';
+    lbLabel.style.zIndex = '10002';
+    lbLabel.style.bottom = '30px';
+    lbLabel.style.right = '30px';
+    lbLabel.style.position = 'fixed';
+    
     const lbPrev = document.createElement('span');
     lbPrev.className = 'lightbox-nav lightbox-prev';
     lbPrev.innerHTML = '&#10094;';
@@ -316,6 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lbNext.innerHTML = '&#10095;';
 
     lightbox.appendChild(closeBtn);
+    lightbox.appendChild(lbLabel);
     lightbox.appendChild(lbPrev);
     lightbox.appendChild(lbNext);
     lightbox.appendChild(maxImg);
@@ -323,17 +335,36 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.lbCurrentArray = [];
     window.lbCurrentIndex = 0;
+    window.lbSyncCarousel = null;
 
     window.openLightboxWithArray = function() {
         lightbox.style.display = 'flex';
         setTimeout(() => lightbox.classList.add('show'), 10);
-        maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
+        updateLightboxImg();
         document.body.style.overflow = 'hidden';
     };
 
     function updateLightboxImg() {
         if(window.lbCurrentArray && window.lbCurrentArray.length > 0) {
             maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
+            
+            const parts = window.lbCurrentArray[window.lbCurrentIndex].split('/');
+            let catText = parts.length > 2 ? parts[2] : "";
+            
+            catText = catText.replace('salone&cucina', 'Salotto / Cucina')
+                             .replace('giardino', 'Giardino')
+                             .replace('esterno', 'Esterno')
+                             .replace('bagno 1', 'Bagno 1')
+                             .replace('bagno', 'Bagno')
+                             .replace('stanza ', 'Stanza ')
+                             .replace('stanza', 'Stanza');
+                             
+            catText = catText.charAt(0).toUpperCase() + catText.slice(1);
+            lbLabel.textContent = catText;
+            
+            if(window.lbSyncCarousel) {
+                window.lbSyncCarousel(window.lbCurrentIndex);
+            }
         }
     }
 
