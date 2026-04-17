@@ -593,6 +593,9 @@ main > .contact-section { animation-delay: 3.5s; }
 .blog-card {
   max-width: 400px;
   width: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .blog-card {
