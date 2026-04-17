@@ -1,0 +1,804 @@
+{
+    "villa": {
+        "giardino": [
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-01-480w.webp",
+                    "960": "images/villa/giardino/giardino-01-960w.webp",
+                    "1600": "images/villa/giardino/giardino-01-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-01.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-02-480w.webp",
+                    "960": "images/villa/giardino/giardino-02-960w.webp",
+                    "1600": "images/villa/giardino/giardino-02-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-02.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-03-480w.webp",
+                    "960": "images/villa/giardino/giardino-03-960w.webp",
+                    "1600": "images/villa/giardino/giardino-03-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-03.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-04-480w.webp",
+                    "960": "images/villa/giardino/giardino-04-960w.webp",
+                    "1600": "images/villa/giardino/giardino-04-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-04.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-05-480w.webp",
+                    "960": "images/villa/giardino/giardino-05-960w.webp",
+                    "1600": "images/villa/giardino/giardino-05-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-05.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-06-480w.webp",
+                    "960": "images/villa/giardino/giardino-06-960w.webp",
+                    "1600": "images/villa/giardino/giardino-06-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-06.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-07-480w.webp",
+                    "960": "images/villa/giardino/giardino-07-960w.webp",
+                    "1600": "images/villa/giardino/giardino-07-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-07.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-08-480w.webp",
+                    "960": "images/villa/giardino/giardino-08-960w.webp",
+                    "1600": "images/villa/giardino/giardino-08-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-08.jpg",
+                "alt": "Giardino - La Villa"
+            }
+        ],
+        "stanza 2": [
+            {
+                "webp": {
+                    "480": "images/villa/stanza 2/stanza 2-01-480w.webp",
+                    "960": "images/villa/stanza 2/stanza 2-01-960w.webp",
+                    "1600": "images/villa/stanza 2/stanza 2-01-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 2/stanza 2-01.jpg",
+                "alt": "Stanza 2 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 2/stanza 2-02-480w.webp",
+                    "960": "images/villa/stanza 2/stanza 2-02-960w.webp",
+                    "1600": "images/villa/stanza 2/stanza 2-02-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 2/stanza 2-02.jpg",
+                "alt": "Stanza 2 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 2/stanza 2-03-480w.webp",
+                    "960": "images/villa/stanza 2/stanza 2-03-960w.webp",
+                    "1600": "images/villa/stanza 2/stanza 2-03-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 2/stanza 2-03.jpg",
+                "alt": "Stanza 2 - La Villa"
+            }
+        ],
+        "stanza 3": [
+            {
+                "webp": {
+                    "480": "images/villa/stanza 3/stanza 3-01-480w.webp",
+                    "960": "images/villa/stanza 3/stanza 3-01-960w.webp",
+                    "1600": "images/villa/stanza 3/stanza 3-01-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 3/stanza 3-01.jpg",
+                "alt": "Stanza 3 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 3/stanza 3-02-480w.webp",
+                    "960": "images/villa/stanza 3/stanza 3-02-960w.webp",
+                    "1600": "images/villa/stanza 3/stanza 3-02-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 3/stanza 3-02.jpg",
+                "alt": "Stanza 3 - La Villa"
+            }
+        ],
+        "bagno 1": [
+            {
+                "webp": {
+                    "480": "images/villa/bagno 1/bagno 1-01-480w.webp",
+                    "960": "images/villa/bagno 1/bagno 1-01-960w.webp",
+                    "1600": "images/villa/bagno 1/bagno 1-01-1600w.webp"
+                },
+                "fallback": "images/villa/bagno 1/bagno 1-01.jpg",
+                "alt": "Bagno 1 - La Villa"
+            }
+        ],
+        "salone&cucina": [
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-01-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-01-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-01-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-01.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-02-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-02-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-02-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-02.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-03-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-03-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-03-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-03.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-04-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-04-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-04-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-04.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-05-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-05-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-05-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-05.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            }
+        ],
+        "stanza 1": [
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-01-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-01-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-01-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-01.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-02-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-02-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-02-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-02.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-03-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-03-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-03-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-03.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-04-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-04-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-04-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-04.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-05-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-05-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-05-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-05.jpg",
+                "alt": "Stanza 1 - La Villa"
+            }
+        ],
+        "Tutte": [
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-01-480w.webp",
+                    "960": "images/villa/giardino/giardino-01-960w.webp",
+                    "1600": "images/villa/giardino/giardino-01-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-01.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-02-480w.webp",
+                    "960": "images/villa/giardino/giardino-02-960w.webp",
+                    "1600": "images/villa/giardino/giardino-02-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-02.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-03-480w.webp",
+                    "960": "images/villa/giardino/giardino-03-960w.webp",
+                    "1600": "images/villa/giardino/giardino-03-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-03.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-04-480w.webp",
+                    "960": "images/villa/giardino/giardino-04-960w.webp",
+                    "1600": "images/villa/giardino/giardino-04-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-04.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-05-480w.webp",
+                    "960": "images/villa/giardino/giardino-05-960w.webp",
+                    "1600": "images/villa/giardino/giardino-05-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-05.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-06-480w.webp",
+                    "960": "images/villa/giardino/giardino-06-960w.webp",
+                    "1600": "images/villa/giardino/giardino-06-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-06.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-07-480w.webp",
+                    "960": "images/villa/giardino/giardino-07-960w.webp",
+                    "1600": "images/villa/giardino/giardino-07-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-07.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/giardino/giardino-08-480w.webp",
+                    "960": "images/villa/giardino/giardino-08-960w.webp",
+                    "1600": "images/villa/giardino/giardino-08-1600w.webp"
+                },
+                "fallback": "images/villa/giardino/giardino-08.jpg",
+                "alt": "Giardino - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 2/stanza 2-01-480w.webp",
+                    "960": "images/villa/stanza 2/stanza 2-01-960w.webp",
+                    "1600": "images/villa/stanza 2/stanza 2-01-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 2/stanza 2-01.jpg",
+                "alt": "Stanza 2 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 2/stanza 2-02-480w.webp",
+                    "960": "images/villa/stanza 2/stanza 2-02-960w.webp",
+                    "1600": "images/villa/stanza 2/stanza 2-02-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 2/stanza 2-02.jpg",
+                "alt": "Stanza 2 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 2/stanza 2-03-480w.webp",
+                    "960": "images/villa/stanza 2/stanza 2-03-960w.webp",
+                    "1600": "images/villa/stanza 2/stanza 2-03-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 2/stanza 2-03.jpg",
+                "alt": "Stanza 2 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 3/stanza 3-01-480w.webp",
+                    "960": "images/villa/stanza 3/stanza 3-01-960w.webp",
+                    "1600": "images/villa/stanza 3/stanza 3-01-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 3/stanza 3-01.jpg",
+                "alt": "Stanza 3 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 3/stanza 3-02-480w.webp",
+                    "960": "images/villa/stanza 3/stanza 3-02-960w.webp",
+                    "1600": "images/villa/stanza 3/stanza 3-02-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 3/stanza 3-02.jpg",
+                "alt": "Stanza 3 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/bagno 1/bagno 1-01-480w.webp",
+                    "960": "images/villa/bagno 1/bagno 1-01-960w.webp",
+                    "1600": "images/villa/bagno 1/bagno 1-01-1600w.webp"
+                },
+                "fallback": "images/villa/bagno 1/bagno 1-01.jpg",
+                "alt": "Bagno 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-01-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-01-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-01-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-01.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-02-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-02-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-02-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-02.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-03-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-03-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-03-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-03.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-04-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-04-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-04-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-04.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/salone&cucina/salone_cucina-05-480w.webp",
+                    "960": "images/villa/salone&cucina/salone_cucina-05-960w.webp",
+                    "1600": "images/villa/salone&cucina/salone_cucina-05-1600w.webp"
+                },
+                "fallback": "images/villa/salone&cucina/salone_cucina-05.jpg",
+                "alt": "Salotto / cucina - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-01-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-01-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-01-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-01.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-02-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-02-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-02-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-02.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-03-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-03-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-03-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-03.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-04-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-04-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-04-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-04.jpg",
+                "alt": "Stanza 1 - La Villa"
+            },
+            {
+                "webp": {
+                    "480": "images/villa/stanza 1/stanza 1-05-480w.webp",
+                    "960": "images/villa/stanza 1/stanza 1-05-960w.webp",
+                    "1600": "images/villa/stanza 1/stanza 1-05-1600w.webp"
+                },
+                "fallback": "images/villa/stanza 1/stanza 1-05.jpg",
+                "alt": "Stanza 1 - La Villa"
+            }
+        ]
+    },
+    "conte": {
+        "bagno": [
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-01-480w.webp",
+                    "960": "images/house/bagno/bagno-01-960w.webp",
+                    "1600": "images/house/bagno/bagno-01-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-01.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-02-480w.webp",
+                    "960": "images/house/bagno/bagno-02-960w.webp",
+                    "1600": "images/house/bagno/bagno-02-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-02.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-03-480w.webp",
+                    "960": "images/house/bagno/bagno-03-960w.webp",
+                    "1600": "images/house/bagno/bagno-03-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-03.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-04-480w.webp",
+                    "960": "images/house/bagno/bagno-04-960w.webp",
+                    "1600": "images/house/bagno/bagno-04-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-04.jpg",
+                "alt": "Bagno - La Conte House"
+            }
+        ],
+        "stanza": [
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-01-480w.webp",
+                    "960": "images/house/stanza/stanza-01-960w.webp",
+                    "1600": "images/house/stanza/stanza-01-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-01.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-02-480w.webp",
+                    "960": "images/house/stanza/stanza-02-960w.webp",
+                    "1600": "images/house/stanza/stanza-02-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-02.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-03-480w.webp",
+                    "960": "images/house/stanza/stanza-03-960w.webp",
+                    "1600": "images/house/stanza/stanza-03-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-03.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-04-480w.webp",
+                    "960": "images/house/stanza/stanza-04-960w.webp",
+                    "1600": "images/house/stanza/stanza-04-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-04.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-05-480w.webp",
+                    "960": "images/house/stanza/stanza-05-960w.webp",
+                    "1600": "images/house/stanza/stanza-05-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-05.jpg",
+                "alt": "Stanza - La Conte House"
+            }
+        ],
+        "esterno": [
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-01-480w.webp",
+                    "960": "images/house/esterno/esterno-01-960w.webp",
+                    "1600": "images/house/esterno/esterno-01-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-01.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-02-480w.webp",
+                    "960": "images/house/esterno/esterno-02-960w.webp",
+                    "1600": "images/house/esterno/esterno-02-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-02.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-03-480w.webp",
+                    "960": "images/house/esterno/esterno-03-960w.webp",
+                    "1600": "images/house/esterno/esterno-03-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-03.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-04-480w.webp",
+                    "960": "images/house/esterno/esterno-04-960w.webp",
+                    "1600": "images/house/esterno/esterno-04-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-04.jpg",
+                "alt": "Esterno - La Conte House"
+            }
+        ],
+        "salone&cucina": [
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-01-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-01-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-01-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-01.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-02-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-02-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-02-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-02.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-03-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-03-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-03-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-03.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-04-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-04-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-04-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-04.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-05-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-05-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-05-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-05.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-06-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-06-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-06-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-06.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            }
+        ],
+        "Tutte": [
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-01-480w.webp",
+                    "960": "images/house/bagno/bagno-01-960w.webp",
+                    "1600": "images/house/bagno/bagno-01-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-01.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-02-480w.webp",
+                    "960": "images/house/bagno/bagno-02-960w.webp",
+                    "1600": "images/house/bagno/bagno-02-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-02.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-03-480w.webp",
+                    "960": "images/house/bagno/bagno-03-960w.webp",
+                    "1600": "images/house/bagno/bagno-03-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-03.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/bagno/bagno-04-480w.webp",
+                    "960": "images/house/bagno/bagno-04-960w.webp",
+                    "1600": "images/house/bagno/bagno-04-1600w.webp"
+                },
+                "fallback": "images/house/bagno/bagno-04.jpg",
+                "alt": "Bagno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-01-480w.webp",
+                    "960": "images/house/stanza/stanza-01-960w.webp",
+                    "1600": "images/house/stanza/stanza-01-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-01.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-02-480w.webp",
+                    "960": "images/house/stanza/stanza-02-960w.webp",
+                    "1600": "images/house/stanza/stanza-02-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-02.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-03-480w.webp",
+                    "960": "images/house/stanza/stanza-03-960w.webp",
+                    "1600": "images/house/stanza/stanza-03-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-03.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-04-480w.webp",
+                    "960": "images/house/stanza/stanza-04-960w.webp",
+                    "1600": "images/house/stanza/stanza-04-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-04.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/stanza/stanza-05-480w.webp",
+                    "960": "images/house/stanza/stanza-05-960w.webp",
+                    "1600": "images/house/stanza/stanza-05-1600w.webp"
+                },
+                "fallback": "images/house/stanza/stanza-05.jpg",
+                "alt": "Stanza - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-01-480w.webp",
+                    "960": "images/house/esterno/esterno-01-960w.webp",
+                    "1600": "images/house/esterno/esterno-01-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-01.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-02-480w.webp",
+                    "960": "images/house/esterno/esterno-02-960w.webp",
+                    "1600": "images/house/esterno/esterno-02-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-02.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-03-480w.webp",
+                    "960": "images/house/esterno/esterno-03-960w.webp",
+                    "1600": "images/house/esterno/esterno-03-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-03.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/esterno/esterno-04-480w.webp",
+                    "960": "images/house/esterno/esterno-04-960w.webp",
+                    "1600": "images/house/esterno/esterno-04-1600w.webp"
+                },
+                "fallback": "images/house/esterno/esterno-04.jpg",
+                "alt": "Esterno - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-01-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-01-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-01-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-01.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-02-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-02-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-02-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-02.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-03-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-03-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-03-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-03.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-04-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-04-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-04-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-04.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-05-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-05-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-05-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-05.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            },
+            {
+                "webp": {
+                    "480": "images/house/salone&cucina/salone_cucina-06-480w.webp",
+                    "960": "images/house/salone&cucina/salone_cucina-06-960w.webp",
+                    "1600": "images/house/salone&cucina/salone_cucina-06-1600w.webp"
+                },
+                "fallback": "images/house/salone&cucina/salone_cucina-06.jpg",
+                "alt": "Salotto / cucina - La Conte House"
+            }
+        ]
+    }
+}

@@ -166,21 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateLightboxImg() {
         if(window.lbCurrentArray && window.lbCurrentArray.length > 0) {
-            maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
+            const imgObj = window.lbCurrentArray[window.lbCurrentIndex];
+            maxImg.srcset = `${imgObj.webp["480"]} 480w, ${imgObj.webp["960"]} 960w, ${imgObj.webp["1600"]} 1600w`;
+            maxImg.sizes = "100vw";
+            maxImg.src = imgObj.fallback;
+            maxImg.alt = imgObj.alt;
             
-            const parts = window.lbCurrentArray[window.lbCurrentIndex].split('/');
-            let catText = parts.length > 2 ? parts[2] : "";
-            
-            catText = catText.replace('salone&cucina', 'Salotto / Cucina')
-                             .replace('giardino', 'Giardino')
-                             .replace('esterno', 'Esterno')
-                             .replace('bagno 1', 'Bagno 1')
-                             .replace('bagno', 'Bagno')
-                             .replace('stanza ', 'Stanza ')
-                             .replace('stanza', 'Stanza');
-                             
-            catText = catText.charAt(0).toUpperCase() + catText.slice(1);
-            lbLabel.textContent = catText;
+            lbLabel.textContent = imgObj.alt.split(' - ')[0];
             
             if(window.lbSyncCarousel) {
                 window.lbSyncCarousel(window.lbCurrentIndex);
@@ -244,13 +236,17 @@ document.addEventListener('DOMContentLoaded', () => {
         function updateImage() {
             const imgs = galleryData[propertyKey]['Tutte'];
             if (imgs && imgs.length > 0) {
-                imageElement.src = imgs[currentIndex];
+                const imgObj = imgs[currentIndex];
+                imageElement.srcset = `${imgObj.webp["480"]} 480w, ${imgObj.webp["960"]} 960w, ${imgObj.webp["1600"]} 1600w`;
+                imageElement.sizes = "(max-width: 768px) 100vw, 45vw";
+                imageElement.src = imgObj.fallback;
+                imageElement.alt = imgObj.alt;
                 
-                // Preload adjacent images to fix loading delays
+                // Preload adjacent images
                 const preloadNext = new Image();
-                preloadNext.src = imgs[(currentIndex + 1) % imgs.length];
+                preloadNext.src = imgs[(currentIndex + 1) % imgs.length].fallback;
                 const preloadPrev = new Image();
-                preloadPrev.src = imgs[(currentIndex - 1 + imgs.length) % imgs.length];
+                preloadPrev.src = imgs[(currentIndex - 1 + imgs.length) % imgs.length].fallback;
                 
                 let label = gallery.querySelector('.carousel-label');
                 if (!label) {
@@ -261,20 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     imgContainer.appendChild(label);
                 }
                 
-                const parts = imgs[currentIndex].split('/');
-                let catText = parts.length > 2 ? parts[2] : "";
-                
-                catText = catText.replace('salone&cucina', 'Salotto / Cucina')
-                                 .replace('giardino', 'Giardino')
-                                 .replace('esterno', 'Esterno')
-                                 .replace('bagno', 'Bagno')
-                                 .replace('stanza ', 'Stanza ')
-                                 .replace('stanza', 'Stanza');
-                                 
-                catText = catText.charAt(0).toUpperCase() + catText.slice(1);
-                label.textContent = catText;
-                const propName = propertyKey === 'villa' ? 'La Villa' : 'La Conte House';
-                imageElement.alt = `${catText} - ${propName}`;
+                label.textContent = imgObj.alt.split(' - ')[0];
             }
         }
 
