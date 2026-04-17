@@ -1,122 +1,146 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // === CAROUSEL LOGIC ===
-    const galleryData = {
-    "villa": {
-        "giardino": [
-            "images/villa/giardino/26EA642B-36BE-4AB2-995D-C0369173014E_4_5005_c.jpeg",
-            "images/villa/giardino/4268B1BD-1472-4D5E-9817-43D37EA16A31_4_5005_c.jpeg",
-            "images/villa/giardino/4EDED8F3-742B-4346-8A1B-1D50343EE903_1_105_c.jpeg",
-            "images/villa/giardino/8276F5D8-1BC1-4B2D-89D9-8C62F60E755C_4_5005_c.jpeg",
-            "images/villa/giardino/8EEC52B7-1160-4CC4-AA87-8B63F929DD3D_1_105_c.jpeg",
-            "images/villa/giardino/9A504C58-C365-4B6E-A001-A5F8963D3B91_1_105_c.jpeg",
-            "images/villa/giardino/E35C3DB7-9DA4-45FC-8C37-E52FE5D2E582_4_5005_c.jpeg",
-            "images/villa/giardino/FC48C6C8-2DD0-4ACC-B66E-6DC6BD20549E_1_105_c.jpeg"
-        ],
-        "salone&cucina": [
-            "images/villa/salone&cucina/DSC_0085.JPG",
-            "images/villa/salone&cucina/DSC_0090.JPG",
-            "images/villa/salone&cucina/DSC_0099.JPG",
-            "images/villa/salone&cucina/DSC_0104.JPG",
-            "images/villa/salone&cucina/DSC_0111.JPG"
-        ],
-        "stanza 1": [
-            "images/villa/stanza 1/1AF6C193-C0ED-4977-9D61-02CE8AFBAE62_4_5005_c.jpeg",
-            "images/villa/stanza 1/2A4D06F3-4731-4027-8429-52C259E2C0AE_4_5005_c.jpeg",
-            "images/villa/stanza 1/2AAD7C51-DD85-4CFE-9B71-F4F08838A756_4_5005_c.jpeg",
-            "images/villa/stanza 1/6A87A1E1-CFE5-4B9B-82BB-B7855E1C01B2_4_5005_c.jpeg",
-            "images/villa/stanza 1/95531917-55C8-4B29-B6EB-F934DAF3F566_4_5005_c.jpeg"
-        ],
-        "stanza 2": [
-            "images/villa/stanza 2/04FD21C3-8C04-440F-B27E-E28CD0FCE02D_4_5005_c.jpeg",
-            "images/villa/stanza 2/167AB6BE-CA0E-4D07-898C-514027A0280B_4_5005_c.jpeg",
-            "images/villa/stanza 2/66E2FC4D-C8C3-4081-95B0-DA076704FA44_4_5005_c.jpeg"
-        ],
-        "stanza 3": [
-            "images/villa/stanza 3/8037F6AB-B5A0-4EB9-9FA1-97F843835080_4_5005_c.jpeg",
-            "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg"
-        ],
-        "bagno 1": [
-            "images/villa/bagno 1/DSC_0130.JPG"
-        ],
-        "Tutte": [
-            "images/villa/giardino/26EA642B-36BE-4AB2-995D-C0369173014E_4_5005_c.jpeg",
-            "images/villa/giardino/4268B1BD-1472-4D5E-9817-43D37EA16A31_4_5005_c.jpeg",
-            "images/villa/giardino/4EDED8F3-742B-4346-8A1B-1D50343EE903_1_105_c.jpeg",
-            "images/villa/giardino/8276F5D8-1BC1-4B2D-89D9-8C62F60E755C_4_5005_c.jpeg",
-            "images/villa/giardino/8EEC52B7-1160-4CC4-AA87-8B63F929DD3D_1_105_c.jpeg",
-            "images/villa/giardino/9A504C58-C365-4B6E-A001-A5F8963D3B91_1_105_c.jpeg",
-            "images/villa/giardino/E35C3DB7-9DA4-45FC-8C37-E52FE5D2E582_4_5005_c.jpeg",
-            "images/villa/giardino/FC48C6C8-2DD0-4ACC-B66E-6DC6BD20549E_1_105_c.jpeg",
-            "images/villa/salone&cucina/DSC_0085.JPG",
-            "images/villa/salone&cucina/DSC_0090.JPG",
-            "images/villa/salone&cucina/DSC_0099.JPG",
-            "images/villa/salone&cucina/DSC_0104.JPG",
-            "images/villa/salone&cucina/DSC_0111.JPG",
-            "images/villa/stanza 1/1AF6C193-C0ED-4977-9D61-02CE8AFBAE62_4_5005_c.jpeg",
-            "images/villa/stanza 1/2A4D06F3-4731-4027-8429-52C259E2C0AE_4_5005_c.jpeg",
-            "images/villa/stanza 1/2AAD7C51-DD85-4CFE-9B71-F4F08838A756_4_5005_c.jpeg",
-            "images/villa/stanza 1/6A87A1E1-CFE5-4B9B-82BB-B7855E1C01B2_4_5005_c.jpeg",
-            "images/villa/stanza 1/95531917-55C8-4B29-B6EB-F934DAF3F566_4_5005_c.jpeg",
-            "images/villa/stanza 2/04FD21C3-8C04-440F-B27E-E28CD0FCE02D_4_5005_c.jpeg",
-            "images/villa/stanza 2/167AB6BE-CA0E-4D07-898C-514027A0280B_4_5005_c.jpeg",
-            "images/villa/stanza 2/66E2FC4D-C8C3-4081-95B0-DA076704FA44_4_5005_c.jpeg",
-            "images/villa/stanza 3/8037F6AB-B5A0-4EB9-9FA1-97F843835080_4_5005_c.jpeg",
-            "images/villa/stanza 3/F4CBF9BB-20B1-4B40-8C10-CBE878BF99D0_4_5005_c.jpeg",
-            "images/villa/bagno 1/DSC_0130.JPG"
-        ]
-    },
-    "conte": {
-        "salone&cucina": [
-            "images/house/salone&cucina/DSC_0025.JPG",
-            "images/house/salone&cucina/DSC_0028.JPG",
-            "images/house/salone&cucina/DSC_0032.JPG",
-            "images/house/salone&cucina/DSC_0061.JPG",
-            "images/house/salone&cucina/DSC_0066.JPG",
-            "images/house/salone&cucina/DSC_0071.JPG"
-        ],
-        "stanza": [
-            "images/house/stanza/DSC_0968.JPG",
-            "images/house/stanza/DSC_0984.JPG",
-            "images/house/stanza/DSC_0987.JPG",
-            "images/house/stanza/DSC_0997.JPG",
-            "images/house/stanza/DSC_1007.JPG"
-        ],
-        "bagno": [
-            "images/house/bagno/DSC_0079.JPG",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg"
-        ],
-        "esterno": [
-            "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
-            "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
-            "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
-            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
-        ],
-        "Tutte": [
-            "images/house/salone&cucina/DSC_0025.JPG",
-            "images/house/salone&cucina/DSC_0028.JPG",
-            "images/house/salone&cucina/DSC_0032.JPG",
-            "images/house/salone&cucina/DSC_0061.JPG",
-            "images/house/salone&cucina/DSC_0066.JPG",
-            "images/house/salone&cucina/DSC_0071.JPG",
-            "images/house/stanza/DSC_0968.JPG",
-            "images/house/stanza/DSC_0984.JPG",
-            "images/house/stanza/DSC_0987.JPG",
-            "images/house/stanza/DSC_0997.JPG",
-            "images/house/stanza/DSC_1007.JPG",
-            "images/house/bagno/DSC_0079.JPG",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg",
-            "images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg",
-            "images/house/esterno/3B4895AD-286E-4081-A3A8-80E2FFE69987_1_105_c.jpeg",
-            "images/house/esterno/6070F5FC-C36D-4CB8-9E8B-348F4A1FC35D_1_105_c.jpeg",
-            "images/house/esterno/6853A0C5-7E98-4629-B29B-F68321A7F71D_1_105_c.jpeg",
-            "images/house/esterno/FFBF2795-CFCB-431C-A979-0E5AAC0CA78C.jpeg"
-        ]
+    // Helper: build image object from base path (produced by optimize_images.py)
+    function img(base, alt) {
+        return {
+            webp: {
+                "480":  base + "-480w.webp",
+                "960":  base + "-960w.webp",
+                "1600": base + "-1600w.webp"
+            },
+            fallback: base + ".jpg",
+            alt: alt
+        };
     }
-};
+    // Helper: images not yet through optimize_images.py (e.g. WhatsApp photos)
+    function imgRaw(path, alt) {
+        return { webp: {"480": path, "960": path, "1600": path}, fallback: path, alt: alt };
+    }
+
+    const galleryData = {
+        "villa": {
+            "giardino": [
+                img("images/villa/giardino/giardino-01", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-02", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-03", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-04", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-05", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-06", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-07", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-08", "Giardino - La Villa")
+            ],
+            "salone&cucina": [
+                img("images/villa/salone&cucina/salone_cucina-01", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-02", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-03", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-04", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-05", "Salotto / Cucina - La Villa")
+            ],
+            "stanza 1": [
+                img("images/villa/stanza 1/stanza 1-01", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-02", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-03", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-04", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-05", "Stanza 1 - La Villa")
+            ],
+            "stanza 2": [
+                img("images/villa/stanza 2/stanza 2-01", "Stanza 2 - La Villa"),
+                img("images/villa/stanza 2/stanza 2-02", "Stanza 2 - La Villa"),
+                img("images/villa/stanza 2/stanza 2-03", "Stanza 2 - La Villa")
+            ],
+            "stanza 3": [
+                img("images/villa/stanza 3/stanza 3-01", "Stanza 3 - La Villa"),
+                img("images/villa/stanza 3/stanza 3-02", "Stanza 3 - La Villa")
+            ],
+            "bagno 1": [
+                img("images/villa/bagno 1/bagno 1-01", "Bagno 1 - La Villa")
+            ],
+            "Tutte": [
+                img("images/villa/giardino/giardino-01", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-02", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-03", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-04", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-05", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-06", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-07", "Giardino - La Villa"),
+                img("images/villa/giardino/giardino-08", "Giardino - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-01", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-02", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-03", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-04", "Salotto / Cucina - La Villa"),
+                img("images/villa/salone&cucina/salone_cucina-05", "Salotto / Cucina - La Villa"),
+                img("images/villa/stanza 1/stanza 1-01", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-02", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-03", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-04", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 1/stanza 1-05", "Stanza 1 - La Villa"),
+                img("images/villa/stanza 2/stanza 2-01", "Stanza 2 - La Villa"),
+                img("images/villa/stanza 2/stanza 2-02", "Stanza 2 - La Villa"),
+                img("images/villa/stanza 2/stanza 2-03", "Stanza 2 - La Villa"),
+                img("images/villa/stanza 3/stanza 3-01", "Stanza 3 - La Villa"),
+                img("images/villa/stanza 3/stanza 3-02", "Stanza 3 - La Villa"),
+                img("images/villa/bagno 1/bagno 1-01", "Bagno 1 - La Villa")
+            ]
+        },
+        "conte": {
+            "salone&cucina": [
+                img("images/house/salone&cucina/salone_cucina-01", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-02", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-03", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-04", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-05", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-06", "Salotto / Cucina - La Conte House")
+            ],
+            "stanza": [
+                img("images/house/stanza/stanza-01", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-02", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-03", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-04", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-05", "Stanza - La Conte House")
+            ],
+            "bagno": [
+                img("images/house/bagno/bagno-01", "Bagno - La Conte House"),
+                img("images/house/bagno/bagno-02", "Bagno - La Conte House"),
+                img("images/house/bagno/bagno-03", "Bagno - La Conte House"),
+                img("images/house/bagno/bagno-04", "Bagno - La Conte House"),
+                // Foto WhatsApp non ancora ottimizzate — aggiungi dopo aver eseguito optimize_images.py
+                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg", "Bagno - La Conte House"),
+                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg", "Bagno - La Conte House"),
+                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg", "Bagno - La Conte House")
+            ],
+            "esterno": [
+                img("images/house/esterno/esterno-01", "Esterno - La Conte House"),
+                img("images/house/esterno/esterno-02", "Esterno - La Conte House"),
+                img("images/house/esterno/esterno-03", "Esterno - La Conte House"),
+                img("images/house/esterno/esterno-04", "Esterno - La Conte House")
+            ],
+            "Tutte": [
+                img("images/house/salone&cucina/salone_cucina-01", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-02", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-03", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-04", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-05", "Salotto / Cucina - La Conte House"),
+                img("images/house/salone&cucina/salone_cucina-06", "Salotto / Cucina - La Conte House"),
+                img("images/house/stanza/stanza-01", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-02", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-03", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-04", "Stanza - La Conte House"),
+                img("images/house/stanza/stanza-05", "Stanza - La Conte House"),
+                img("images/house/bagno/bagno-01", "Bagno - La Conte House"),
+                img("images/house/bagno/bagno-02", "Bagno - La Conte House"),
+                img("images/house/bagno/bagno-03", "Bagno - La Conte House"),
+                img("images/house/bagno/bagno-04", "Bagno - La Conte House"),
+                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg", "Bagno - La Conte House"),
+                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg", "Bagno - La Conte House"),
+                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg", "Bagno - La Conte House"),
+                img("images/house/esterno/esterno-01", "Esterno - La Conte House"),
+                img("images/house/esterno/esterno-02", "Esterno - La Conte House"),
+                img("images/house/esterno/esterno-03", "Esterno - La Conte House"),
+                img("images/house/esterno/esterno-04", "Esterno - La Conte House")
+            ]
+        }
+    };
 
     // === LIGHTBOX LOGIC ===
     const lightbox = document.createElement('div');
@@ -388,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in-up');
     fadeElements.forEach(el => scrollObserver.observe(el));
 
-// === LOADING LOGIC ===
+    // === LOADING LOGIC ===
     const body = document.body;
     body.classList.add('loading');
     const loaderStart = performance.now();
@@ -403,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, remaining);
     });
 
-    });
+});
 
 // === DYNAMIC CARD COLORING ===
 window.addEventListener('load', () => {
