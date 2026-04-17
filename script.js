@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "bagno 1": [
             "images/villa/bagno 1/DSC_0130.JPG"
         ],
-        "bagno 2": [],
         "Tutte": [
             "images/villa/giardino/26EA642B-36BE-4AB2-995D-C0369173014E_4_5005_c.jpeg",
             "images/villa/giardino/4268B1BD-1472-4D5E-9817-43D37EA16A31_4_5005_c.jpeg",
@@ -119,6 +118,116 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 };
 
+    // === LIGHTBOX LOGIC ===
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.className = 'lightbox';
+
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'lightbox-close';
+    closeBtn.innerHTML = '&times;';
+
+    const maxImg = document.createElement('img');
+    maxImg.className = 'lightbox-content';
+    maxImg.id = 'lightbox-img';
+    
+    const lbLabel = document.createElement('div');
+    lbLabel.className = 'carousel-label fade-in';
+    lbLabel.style.zIndex = '10002';
+    lbLabel.style.bottom = '30px';
+    lbLabel.style.right = '30px';
+    lbLabel.style.position = 'fixed';
+    
+    const lbPrev = document.createElement('span');
+    lbPrev.className = 'lightbox-nav lightbox-prev';
+    lbPrev.innerHTML = '&#10094;';
+
+    const lbNext = document.createElement('span');
+    lbNext.className = 'lightbox-nav lightbox-next';
+    lbNext.innerHTML = '&#10095;';
+
+    lightbox.appendChild(closeBtn);
+    lightbox.appendChild(lbLabel);
+    lightbox.appendChild(lbPrev);
+    lightbox.appendChild(lbNext);
+    lightbox.appendChild(maxImg);
+    document.body.appendChild(lightbox);
+    
+    window.lbCurrentArray = [];
+    window.lbCurrentIndex = 0;
+    window.lbSyncCarousel = null;
+
+    window.openLightboxWithArray = function() {
+        lightbox.style.display = 'flex';
+        setTimeout(() => lightbox.classList.add('show'), 10);
+        updateLightboxImg();
+        document.body.style.overflow = 'hidden';
+    };
+
+    function updateLightboxImg() {
+        if(window.lbCurrentArray && window.lbCurrentArray.length > 0) {
+            maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
+            
+            const parts = window.lbCurrentArray[window.lbCurrentIndex].split('/');
+            let catText = parts.length > 2 ? parts[2] : "";
+            
+            catText = catText.replace('salone&cucina', 'Salotto / Cucina')
+                             .replace('giardino', 'Giardino')
+                             .replace('esterno', 'Esterno')
+                             .replace('bagno 1', 'Bagno 1')
+                             .replace('bagno', 'Bagno')
+                             .replace('stanza ', 'Stanza ')
+                             .replace('stanza', 'Stanza');
+                             
+            catText = catText.charAt(0).toUpperCase() + catText.slice(1);
+            lbLabel.textContent = catText;
+            
+            if(window.lbSyncCarousel) {
+                window.lbSyncCarousel(window.lbCurrentIndex);
+            }
+        }
+    }
+
+    lbPrev.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        window.lbCurrentIndex = (window.lbCurrentIndex - 1 + window.lbCurrentArray.length) % window.lbCurrentArray.length;
+        updateLightboxImg();
+    });
+
+    lbNext.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        window.lbCurrentIndex = (window.lbCurrentIndex + 1) % window.lbCurrentArray.length;
+        updateLightboxImg();
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('show');
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 300);
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    
+    // Support left/right arrow keys
+    document.addEventListener('keydown', (e) => {
+        if(lightbox.classList.contains('show')) {
+            if(e.key === 'ArrowLeft') lbPrev.click();
+            if(e.key === 'ArrowRight') lbNext.click();
+            if(e.key === 'Escape') closeLightbox();
+        }
+    });
+
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+
     function initializeCarousel(galleryId, catsId, propertyKey) {
         const gallery = document.getElementById(galleryId);
         const catsContainer = document.getElementById(catsId);
@@ -164,6 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                  
                 catText = catText.charAt(0).toUpperCase() + catText.slice(1);
                 label.textContent = catText;
+                const propName = propertyKey === 'villa' ? 'La Villa' : 'La Conte House';
+                imageElement.alt = `${catText} - ${propName}`;
             }
         }
 
@@ -178,12 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
         prevBtn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            const len = galleryData[propertyKey]['Tutte'].length;
-            currentIndex = (currentIndex - 1 + len) % len;
-            updateImage();
-        });
-
-        prevBtn.addEventListener('click', () => {
             const len = galleryData[propertyKey]['Tutte'].length;
             currentIndex = (currentIndex - 1 + len) % len;
             updateImage();
@@ -299,137 +404,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fadeElements = document.querySelectorAll('.fade-in-up');
     fadeElements.forEach(el => scrollObserver.observe(el));
-});
 
 // === LOADING LOGIC ===
-document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     body.classList.add('loading');
+    const loaderStart = performance.now();
 
     window.addEventListener('load', () => {
         const loader = document.getElementById('loader-wrapper');
+        const elapsed = performance.now() - loaderStart;
+        const remaining = Math.max(0, 2000 - elapsed);
         setTimeout(() => {
             if (loader) loader.classList.add('loader-hidden');
             body.classList.remove('loading');
-        }, 3000);
+        }, remaining);
     });
 
-    // === LIGHTBOX LOGIC ===
-    const lightbox = document.createElement('div');
-    lightbox.id = 'lightbox';
-    lightbox.className = 'lightbox';
-
-    const closeBtn = document.createElement('span');
-    closeBtn.className = 'lightbox-close';
-    closeBtn.innerHTML = '&times;';
-
-    const maxImg = document.createElement('img');
-    maxImg.className = 'lightbox-content';
-    maxImg.id = 'lightbox-img';
-    
-    const lbLabel = document.createElement('div');
-    lbLabel.className = 'carousel-label fade-in';
-    lbLabel.style.zIndex = '10002';
-    lbLabel.style.bottom = '30px';
-    lbLabel.style.right = '30px';
-    lbLabel.style.position = 'fixed';
-    
-    const lbPrev = document.createElement('span');
-    lbPrev.className = 'lightbox-nav lightbox-prev';
-    lbPrev.innerHTML = '&#10094;';
-
-    const lbNext = document.createElement('span');
-    lbNext.className = 'lightbox-nav lightbox-next';
-    lbNext.innerHTML = '&#10095;';
-
-    lightbox.appendChild(closeBtn);
-    lightbox.appendChild(lbLabel);
-    lightbox.appendChild(lbPrev);
-    lightbox.appendChild(lbNext);
-    lightbox.appendChild(maxImg);
-    document.body.appendChild(lightbox);
-    
-    window.lbCurrentArray = [];
-    window.lbCurrentIndex = 0;
-    window.lbSyncCarousel = null;
-
-    window.openLightboxWithArray = function() {
-        lightbox.style.display = 'flex';
-        setTimeout(() => lightbox.classList.add('show'), 10);
-        updateLightboxImg();
-        document.body.style.overflow = 'hidden';
-    };
-
-    function updateLightboxImg() {
-        if(window.lbCurrentArray && window.lbCurrentArray.length > 0) {
-            maxImg.src = window.lbCurrentArray[window.lbCurrentIndex];
-            
-            const parts = window.lbCurrentArray[window.lbCurrentIndex].split('/');
-            let catText = parts.length > 2 ? parts[2] : "";
-            
-            catText = catText.replace('salone&cucina', 'Salotto / Cucina')
-                             .replace('giardino', 'Giardino')
-                             .replace('esterno', 'Esterno')
-                             .replace('bagno 1', 'Bagno 1')
-                             .replace('bagno', 'Bagno')
-                             .replace('stanza ', 'Stanza ')
-                             .replace('stanza', 'Stanza');
-                             
-            catText = catText.charAt(0).toUpperCase() + catText.slice(1);
-            lbLabel.textContent = catText;
-            
-            if(window.lbSyncCarousel) {
-                window.lbSyncCarousel(window.lbCurrentIndex);
-            }
-        }
-    }
-
-    lbPrev.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        window.lbCurrentIndex = (window.lbCurrentIndex - 1 + window.lbCurrentArray.length) % window.lbCurrentArray.length;
-        updateLightboxImg();
     });
-
-    lbNext.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        window.lbCurrentIndex = (window.lbCurrentIndex + 1) % window.lbCurrentArray.length;
-        updateLightboxImg();
-    });
-
-    lbNext.addEventListener('click', (e) => {
-        e.stopPropagation();
-        window.lbCurrentIndex = (window.lbCurrentIndex + 1) % window.lbCurrentArray.length;
-        updateLightboxImg();
-    });
-
-    function closeLightbox() {
-        lightbox.classList.remove('show');
-        setTimeout(() => {
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }, 300);
-    }
-
-    closeBtn.addEventListener('click', closeLightbox);
-    
-    // Support left/right arrow keys
-    document.addEventListener('keydown', (e) => {
-        if(lightbox.classList.contains('show')) {
-            if(e.key === 'ArrowLeft') lbPrev.click();
-            if(e.key === 'ArrowRight') lbNext.click();
-            if(e.key === 'Escape') closeLightbox();
-        }
-    });
-
-    lightbox.addEventListener('click', function (e) {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
-    });
-
-});
 
 // === DYNAMIC CARD COLORING ===
 window.addEventListener('load', () => {
