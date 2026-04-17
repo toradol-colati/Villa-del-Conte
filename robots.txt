@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://toradol-colati.github.io/Front-end-VDC/sitemap.xml
+Sitemap: https://villa-del-conte.com/sitemap.xml

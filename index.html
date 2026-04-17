@@ -21,10 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <link rel="stylesheet" href="style.css?v=2.1">
+    <link rel="canonical" href="https://villa-del-conte.com/">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script type="application/ld+json">
@@ -33,17 +32,31 @@
       "@type": "LodgingBusiness",
       "name": "Villa del Conte",
       "description": "Struttura ricettiva composta da La Villa e La Conte House, situata a Santa Domenica di Ricadi.",
-      "url": "https://toradol-colati.github.io/Front-end-VDC/",
+      "url": "https://villa-del-conte.com/",
       "telephone": "+393332948156",
       "email": "villadelconte.contactus@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Santa Domenica",
-        "addressLocality": "Ricadi",
+        "streetAddress": "Contrada Marina del Faro, 77",
+        "addressLocality": "Santa Domenica di Ricadi",
         "postalCode": "89866",
         "addressRegion": "VV",
         "addressCountry": "IT"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.653,
+        "longitude": 15.867
+      },
+      "priceRange": "$$",
+      "checkinTime": "15:00",
+      "checkoutTime": "10:00",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Garden", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Disabled Access", "value": true }
+      ],
       "image": "https://villa-del-conte.com/images/ui/sfondo-header.jpg"
     }
     </script>
@@ -451,8 +464,8 @@
                     <article class="blog-card" onclick="window.location.href='blog-territorio.html'">
                         <div class="blog-image" style="background-image: url('images/blog/territorio.jpg');"></div>
                         <div class="blog-content">
-                            <h3>Storia del Territorio</h3>
-                            <p>Il territorio che circonda Villa del Conte a Santa Domenica di Ricadi, sulla suggestiva
+                            <h3 data-i18n="blog_territorio_title">Storia del Territorio</h3>
+                            <p data-i18n="blog_territorio_excerpt">Il territorio che circonda Villa del Conte a Santa Domenica di Ricadi, sulla suggestiva
                                 Costa degli Dei in Calabria, è un mosaico vivo di epo...</p>
                             <span class="read-more" data-i18n="read_more">Leggi di più →</span>
                         </div>
@@ -460,8 +473,8 @@
                     <article class="blog-card" onclick="window.location.href='blog-romane.html'">
                         <div class="blog-image" style="background-image: url('images/blog/romane.jpg');"></div>
                         <div class="blog-content">
-                            <h3>Origini Romane</h3>
-                            <p>Le origini romane del territorio intorno a Santa Domenica di Ricadi e Tropea, sulla Costa
+                            <h3 data-i18n="blog_romane_title">Origini Romane</h3>
+                            <p data-i18n="blog_romane_excerpt">Le origini romane del territorio intorno a Santa Domenica di Ricadi e Tropea, sulla Costa
                                 degli Dei in Calabria, riportano a un’epoca di co...</p>
                             <span class="read-more" data-i18n="read_more">Leggi di più →</span>
                         </div>
@@ -470,8 +483,8 @@
                     <article class="blog-card" onclick="window.location.href='blog-costa.html'">
                         <div class="blog-image" style="background-image: url('images/blog/costa.jpg');"></div>
                         <div class="blog-content">
-                            <h3>La Costa degli Dei</h3>
-                            <p>La Costa degli Dei è uno dei tratti di litorale più spettacolari d’Italia, un paradiso
+                            <h3 data-i18n="blog_costa_title">La Costa degli Dei</h3>
+                            <p data-i18n="blog_costa_excerpt">La Costa degli Dei è uno dei tratti di litorale più spettacolari d’Italia, un paradiso
                                 calabrese che si snoda per circa 50 chilometri lu...</p>
                             <span class="read-more" data-i18n="read_more">Leggi di più →</span>
                         </div>
@@ -479,8 +492,8 @@
                     <article class="blog-card" onclick="window.location.href='blog-tropea.html'">
                         <div class="blog-image" style="background-image: url('images/blog/tropea.jpg');"></div>
                         <div class="blog-content">
-                            <h3>Tropea: Il Borgo dei Borghi</h3>
-                            <p>Tropea, la “perla del Tirreno” e più volte eletta Borgo dei Borghi d’Italia, domina la
+                            <h3 data-i18n="blog_tropea_title">Tropea: Il Borgo dei Borghi</h3>
+                            <p data-i18n="blog_tropea_excerpt">Tropea, la “perla del Tirreno” e più volte eletta Borgo dei Borghi d’Italia, domina la
                                 Costa degli Dei in Calabria con un fascino irresist...</p>
                             <span class="read-more" data-i18n="read_more">Leggi di più →</span>
                         </div>
@@ -488,8 +501,8 @@
                     <article class="blog-card" onclick="window.location.href='blog-santadomenica.html'">
                         <div class="blog-image" style="background-image: url('images/blog/santadomenica.jpg');"></div>
                         <div class="blog-content">
-                            <h3>Santa Domenica di Ricadi</h3>
-                            <p>Santa Domenica di Ricadi, frazione del comune di Ricadi sulla Costa degli Dei in Calabria
+                            <h3 data-i18n="blog_santadomenica_title">Santa Domenica di Ricadi</h3>
+                            <p data-i18n="blog_santadomenica_excerpt">Santa Domenica di Ricadi, frazione del comune di Ricadi sulla Costa degli Dei in Calabria
                                 – e non da confondere con l’omonima località...</p>
                             <span class="read-more" data-i18n="read_more">Leggi di più →</span>
                         </div>
@@ -497,8 +510,8 @@
                     <article class="blog-card" onclick="window.location.href='blog-cucina.html'">
                         <div class="blog-image" style="background-image: url('images/blog/cucina.jpg');"></div>
                         <div class="blog-content">
-                            <h3>Tradizioni Culinarie</h3>
-                            <p>Le tradizioni culinarie della Costa degli Dei rappresentano l’anima autentica della
+                            <h3 data-i18n="blog_cucina_title">Tradizioni Culinarie</h3>
+                            <p data-i18n="blog_cucina_excerpt">Le tradizioni culinarie della Costa degli Dei rappresentano l’anima autentica della
                                 Calabria, un’esplosione di sapori intensi e ingredienti...</p>
                             <span class="read-more" data-i18n="read_more">Leggi di più →</span>
                         </div>
@@ -530,7 +543,7 @@
 
 
     <script src="translations.js?v=3.0"></script>
-    <script src="script.js?v=2.0"></script>
+    <script src="script.js?v=20.0"></script>
 </body>
 
 </html>

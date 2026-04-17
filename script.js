@@ -137,6 +137,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (imgs && imgs.length > 0) {
                 imageElement.src = imgs[currentIndex];
                 
+                // Preload adjacent images to fix loading delays
+                const preloadNext = new Image();
+                preloadNext.src = imgs[(currentIndex + 1) % imgs.length];
+                const preloadPrev = new Image();
+                preloadPrev.src = imgs[(currentIndex - 1 + imgs.length) % imgs.length];
+                
                 let label = gallery.querySelector('.carousel-label');
                 if (!label) {
                     label = document.createElement('div');
@@ -161,9 +167,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        nextBtn.addEventListener('click', () => {
+        nextBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
             const len = galleryData[propertyKey]['Tutte'].length;
             currentIndex = (currentIndex + 1) % len;
+            updateImage();
+        });
+
+        prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const len = galleryData[propertyKey]['Tutte'].length;
+            currentIndex = (currentIndex - 1 + len) % len;
             updateImage();
         });
 
@@ -369,8 +385,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     lbPrev.addEventListener('click', (e) => {
+        e.preventDefault();
         e.stopPropagation();
         window.lbCurrentIndex = (window.lbCurrentIndex - 1 + window.lbCurrentArray.length) % window.lbCurrentArray.length;
+        updateLightboxImg();
+    });
+
+    lbNext.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        window.lbCurrentIndex = (window.lbCurrentIndex + 1) % window.lbCurrentArray.length;
         updateLightboxImg();
     });
 
