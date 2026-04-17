@@ -355,6 +355,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function sanitizeHtml(str) {
+        return str.replace(/&/g, '&amp;')
+                  .replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;')
+                  .replace(/"/g, '&quot;')
+                  .replace(/'/g, '&#39;')
+                  .replace(/&lt;em&gt;/g, '<em>')
+                  .replace(/&lt;\/em&gt;/g, '</em>')
+                  .replace(/&lt;strong&gt;/g, '<strong>')
+                  .replace(/&lt;\/strong&gt;/g, '</strong>');
+    }
+
     function applyLanguage() {
         if (!window.translations) return;
         const dict = window.translations[currentLang];
@@ -366,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (dict[key]) {
                 // if data-html is true, insert as HTML (useful for strong/em tags)
                 if (el.getAttribute('data-html') === 'true') {
-                    el.innerHTML = dict[key];
+                    el.innerHTML = sanitizeHtml(dict[key]);
                 } else {
                     el.textContent = dict[key];
                 }
@@ -440,6 +452,10 @@ window.addEventListener('load', () => {
         if (bgUrl && bgUrl.includes('url(')) {
             bgUrl = bgUrl.replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
 
+            if (!bgUrl.startsWith('/') && !bgUrl.startsWith(window.location.origin)) {
+                return;
+            }
+
             const img = new Image();
             img.crossOrigin = "Anonymous";
             img.src = bgUrl;
@@ -478,6 +494,7 @@ window.addEventListener('load', () => {
 
                 } catch (e) {
                     console.log("Could not extract color from " + bgUrl, e);
+                    return;
                 }
             };
         }
