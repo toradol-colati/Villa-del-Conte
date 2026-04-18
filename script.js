@@ -55,32 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             "bagno 1": [
                 img("images/villa/bagno 1/bagno 1-01", "Bagno 1 - La Villa")
-            ],
-            "Tutte": [
-                img("images/villa/giardino/giardino-01", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-02", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-03", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-04", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-05", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-06", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-07", "Giardino - La Villa"),
-                img("images/villa/giardino/giardino-08", "Giardino - La Villa"),
-                img("images/villa/salone&cucina/salone_cucina-01", "Salotto / Cucina - La Villa"),
-                img("images/villa/salone&cucina/salone_cucina-02", "Salotto / Cucina - La Villa"),
-                img("images/villa/salone&cucina/salone_cucina-03", "Salotto / Cucina - La Villa"),
-                img("images/villa/salone&cucina/salone_cucina-04", "Salotto / Cucina - La Villa"),
-                img("images/villa/salone&cucina/salone_cucina-05", "Salotto / Cucina - La Villa"),
-                img("images/villa/stanza 1/stanza 1-01", "Stanza 1 - La Villa"),
-                img("images/villa/stanza 1/stanza 1-02", "Stanza 1 - La Villa"),
-                img("images/villa/stanza 1/stanza 1-03", "Stanza 1 - La Villa"),
-                img("images/villa/stanza 1/stanza 1-04", "Stanza 1 - La Villa"),
-                img("images/villa/stanza 1/stanza 1-05", "Stanza 1 - La Villa"),
-                img("images/villa/stanza 2/stanza 2-01", "Stanza 2 - La Villa"),
-                img("images/villa/stanza 2/stanza 2-02", "Stanza 2 - La Villa"),
-                img("images/villa/stanza 2/stanza 2-03", "Stanza 2 - La Villa"),
-                img("images/villa/stanza 3/stanza 3-01", "Stanza 3 - La Villa"),
-                img("images/villa/stanza 3/stanza 3-02", "Stanza 3 - La Villa"),
-                img("images/villa/bagno 1/bagno 1-01", "Bagno 1 - La Villa")
             ]
         },
         "conte": {
@@ -114,33 +88,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 img("images/house/esterno/esterno-02", "Esterno - La Conte House"),
                 img("images/house/esterno/esterno-03", "Esterno - La Conte House"),
                 img("images/house/esterno/esterno-04", "Esterno - La Conte House")
-            ],
-            "Tutte": [
-                img("images/house/salone&cucina/salone_cucina-01", "Salotto / Cucina - La Conte House"),
-                img("images/house/salone&cucina/salone_cucina-02", "Salotto / Cucina - La Conte House"),
-                img("images/house/salone&cucina/salone_cucina-03", "Salotto / Cucina - La Conte House"),
-                img("images/house/salone&cucina/salone_cucina-04", "Salotto / Cucina - La Conte House"),
-                img("images/house/salone&cucina/salone_cucina-05", "Salotto / Cucina - La Conte House"),
-                img("images/house/salone&cucina/salone_cucina-06", "Salotto / Cucina - La Conte House"),
-                img("images/house/stanza/stanza-01", "Stanza - La Conte House"),
-                img("images/house/stanza/stanza-02", "Stanza - La Conte House"),
-                img("images/house/stanza/stanza-03", "Stanza - La Conte House"),
-                img("images/house/stanza/stanza-04", "Stanza - La Conte House"),
-                img("images/house/stanza/stanza-05", "Stanza - La Conte House"),
-                img("images/house/bagno/bagno-01", "Bagno - La Conte House"),
-                img("images/house/bagno/bagno-02", "Bagno - La Conte House"),
-                img("images/house/bagno/bagno-03", "Bagno - La Conte House"),
-                img("images/house/bagno/bagno-04", "Bagno - La Conte House"),
-                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.13.jpeg", "Bagno - La Conte House"),
-                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.39.jpeg", "Bagno - La Conte House"),
-                imgRaw("images/house/bagno/WhatsApp Image 2026-04-15 at 22.10.49.jpeg", "Bagno - La Conte House"),
-                img("images/house/esterno/esterno-01", "Esterno - La Conte House"),
-                img("images/house/esterno/esterno-02", "Esterno - La Conte House"),
-                img("images/house/esterno/esterno-03", "Esterno - La Conte House"),
-                img("images/house/esterno/esterno-04", "Esterno - La Conte House")
             ]
         }
     };
+
+    // Auto-popola gli array "Tutte" in base alle categorie per evitare array duplicati da gestire manualmente
+    galleryData.villa["Tutte"] = [
+        ...galleryData.villa["giardino"],
+        ...galleryData.villa["salone&cucina"],
+        ...galleryData.villa["stanza 1"],
+        ...galleryData.villa["stanza 2"],
+        ...galleryData.villa["stanza 3"],
+        ...galleryData.villa["bagno 1"]
+    ];
+
+    galleryData.conte["Tutte"] = [
+        ...galleryData.conte["salone&cucina"],
+        ...galleryData.conte["stanza"],
+        ...galleryData.conte["bagno"],
+        ...galleryData.conte["esterno"]
+    ];
 
     // === LIGHTBOX LOGIC ===
     const lightbox = document.createElement('div');

@@ -87,7 +87,11 @@ const translations = {
         "blog_santadomenica_title": "Santa Domenica di Ricadi",
         "blog_santadomenica_excerpt": "Santa Domenica di Ricadi, frazione del comune di Ricadi sulla Costa degli Dei in Calabria – e non da confondere con l’omonima località...",
         "blog_cucina_title": "Tradizioni Culinarie",
-        "blog_cucina_excerpt": "Le tradizioni culinarie della Costa degli Dei rappresentano l’anima autentica della Calabria, un’esplosione di sapori intensi e ingredienti..."
+        "blog_cucina_excerpt": "Le tradizioni culinarie della Costa degli Dei rappresentano l’anima autentica della Calabria, un’esplosione di sapori intensi e ingredienti...",
+
+        "footer_slogan": "il tuo soggiorno sulla Costa degli Dei",
+        "footer_nav": "Naviga",
+        "footer_contacts": "Contatti"
 
     },
     en: {
@@ -178,7 +182,11 @@ const translations = {
         "blog_santadomenica_title": "Santa Domenica di Ricadi",
         "blog_santadomenica_excerpt": "Santa Domenica di Ricadi, a hamlet of the municipality of Ricadi on the Costa degli Dei in Calabria - not to be confused with the town of the same name...",
         "blog_cucina_title": "Culinary Traditions",
-        "blog_cucina_excerpt": "The culinary traditions of the Costa degli Dei represent the authentic soul of Calabria, an explosion of intense flavors and ingredients..."
+        "blog_cucina_excerpt": "The culinary traditions of the Costa degli Dei represent the authentic soul of Calabria, an explosion of intense flavors and ingredients...",
+
+        "footer_slogan": "your stay on Costa degli Dei",
+        "footer_nav": "Navigate",
+        "footer_contacts": "Contacts"
 
     },
     es: {
@@ -269,7 +277,11 @@ const translations = {
         "blog_santadomenica_title": "Santa Domenica di Ricadi",
         "blog_santadomenica_excerpt": "Santa Domenica di Ricadi, una aldea del municipio de Ricadi en la Costa degli Dei en Calabria - no confundir con la ciudad del mismo nombre...",
         "blog_cucina_title": "Tradiciones Culinarias",
-        "blog_cucina_excerpt": "Las tradiciones culinarias de la Costa degli Dei representan el alma auténtica de Calabria, una explosión de sabores intensos e ingredientes..."
+        "blog_cucina_excerpt": "Las tradiciones culinarias de la Costa degli Dei representan el alma auténtica de Calabria, una explosión de sabores intensos e ingredientes...",
+
+        "footer_slogan": "tu estancia en la Costa degli Dei",
+        "footer_nav": "Navegar",
+        "footer_contacts": "Contacto"
 
     },
     ru: {
@@ -360,7 +372,11 @@ const translations = {
         "blog_santadomenica_title": "Санта-Доменика-ди-Рикади",
         "blog_santadomenica_excerpt": "Санта-Доменика-ди-Рикади, деревушка в муниципалитете Рикади на Побережье Богов в Калабрии - не путать с одноименным городом...",
         "blog_cucina_title": "Кулинарные Традиции",
-        "blog_cucina_excerpt": "Кулинарные традиции Побережья Богов представляют собой подлинную душу Калабрии, взрыв интенсивных вкусов и ингредиентов..."
+        "blog_cucina_excerpt": "Кулинарные традиции Побережья Богов представляют собой подлинную душу Калабрии, взрыв интенсивных вкусов и ингредиентов...",
+
+        "footer_slogan": "ваш отдых на Побережье Богов",
+        "footer_nav": "Навигация",
+        "footer_contacts": "Контакты"
 
     },
     de: {
@@ -451,7 +467,11 @@ const translations = {
         "blog_santadomenica_title": "Santa Domenica di Ricadi",
         "blog_santadomenica_excerpt": "Santa Domenica di Ricadi, ein Weiler der Gemeinde Ricadi an der Costa degli Dei in Kalabrien - nicht zu verwechseln mit der gleichnamigen Stadt...",
         "blog_cucina_title": "Kulinarische Traditionen",
-        "blog_cucina_excerpt": "Die kulinarischen Traditionen der Costa degli Dei repräsentieren die authentische Seele Kalabriens, eine Explosion von intensiven Aromen und Zutaten..."
+        "blog_cucina_excerpt": "Die kulinarischen Traditionen der Costa degli Dei repräsentieren die authentische Seele Kalabriens, eine Explosion von intensiven Aromen und Zutaten...",
+
+        "footer_slogan": "Ihr Aufenthalt an der Costa degli Dei",
+        "footer_nav": "Navigation",
+        "footer_contacts": "Kontakt"
 
     },
     zh: {
@@ -542,7 +562,11 @@ const translations = {
         "blog_santadomenica_title": "圣多梅尼卡迪里卡迪",
         "blog_santadomenica_excerpt": "圣多梅尼卡迪里卡迪（Santa Domenica di Ricadi）是卡拉布里亚众神海岸里卡迪市的一个小村庄——不要与同名城镇混淆...",
         "blog_cucina_title": "烹饪传统",
-        "blog_cucina_excerpt": "众神海岸的烹饪传统代表了卡拉布里亚真实的灵魂，这是强烈风味和食材的爆发..."
+        "blog_cucina_excerpt": "众神海岸的烹饪传统代表了卡拉布里亚真实的灵魂，这是强烈风味和食材的爆发...",
+
+        "footer_slogan": "您在众神海岸的住宿",
+        "footer_nav": "导航",
+        "footer_contacts": "联系方式"
 
     }
 };
