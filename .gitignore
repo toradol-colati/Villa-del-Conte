@@ -1,3 +1,11 @@
+# macOS
 .DS_Store
 **/.DS_Store
+
+# Immagini sorgente ad alta risoluzione: restano in locale, il sito usa
+# le versioni ottimizzate generate da tools/optimize_images.py
 images/_originals/
+
+# Dump di contesto per analisi (repomix), non fanno parte del sito
+repomix-output.xml
+*repomix-output.xml
