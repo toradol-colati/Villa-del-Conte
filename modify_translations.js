@@ -111,7 +111,7 @@ const newKeys = {
     }
 }
 
-for (const [lang, keys]] of Object.entries(newKeys)) {
+for (const [lang, keys] of Object.entries(newKeys)) {
     let toInsert = '';
     for (const [k, v] of Object.entries(keys)) {
         toInsert += `        "${k}": "${v.replace(/"/g, '\\"')}",\n`;

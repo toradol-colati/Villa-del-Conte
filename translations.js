@@ -1,5 +1,14 @@
 const translations = {
     it: {
+        "map_notice": "La mappa è fornita da Google Maps. Caricandola accetti che Google riceva il tuo indirizzo IP e possa impostare cookie.",
+        "map_load": "Carica la mappa",
+        "map_open_new": "Oppure aprila in una nuova scheda",
+        "skip_to_content": "Vai al contenuto",
+        "site_h1": "Villa del Conte – Case vacanze a Santa Domenica di Ricadi, Costa degli Dei",
+        "form_privacy": "Ho letto e accetto l'",
+        "form_privacy_link": "informativa privacy",
+        "form_privacy_end": " *",
+        "footer_privacy": "Privacy",
         
         "blog_read_more": "Leggi di più →",
         "blog_toraldo_desc": "Nel cuore della Costa degli Dei, tra le scogliere di Tropea e le spiagge cristalline di Santa Domenica di Ricadi, la figura dell’imperatore Federico II si intreccia con la nobile famiglia Toraldo...",
@@ -95,6 +104,15 @@ const translations = {
 
     },
     en: {
+        "map_notice": "The map is provided by Google Maps. Loading it means Google receives your IP address and may set cookies.",
+        "map_load": "Load the map",
+        "map_open_new": "Or open it in a new tab",
+        "skip_to_content": "Skip to content",
+        "site_h1": "Villa del Conte – Holiday homes in Santa Domenica di Ricadi, Costa degli Dei",
+        "form_privacy": "I have read and accept the ",
+        "form_privacy_link": "privacy notice",
+        "form_privacy_end": " *",
+        "footer_privacy": "Privacy",
         
         "blog_read_more": "Read more →",
         "blog_toraldo_desc": "In the heart of the Coast of the Gods, between the cliffs of Tropea and the crystal clear beaches of Santa Domenica di Ricadi, the figure of Emperor Frederick II intertwines with the noble Toraldo family...",
@@ -190,6 +208,15 @@ const translations = {
 
     },
     es: {
+        "map_notice": "El mapa lo proporciona Google Maps. Al cargarlo, Google recibe tu dirección IP y puede instalar cookies.",
+        "map_load": "Cargar el mapa",
+        "map_open_new": "O ábrelo en una pestaña nueva",
+        "skip_to_content": "Ir al contenido",
+        "site_h1": "Villa del Conte – Casas de vacaciones en Santa Domenica di Ricadi, Costa degli Dei",
+        "form_privacy": "He leído y acepto la ",
+        "form_privacy_link": "política de privacidad",
+        "form_privacy_end": " *",
+        "footer_privacy": "Privacidad",
         
         "blog_read_more": "Leer más →",
         "blog_toraldo_desc": "En el corazón de la Costa de los Dioses, entre los acantilados de Tropea y las cristalinas playas de Santa Domenica de Ricadi, la figura del emperador Federico II se entrelaza con la noble familia Toraldo...",
@@ -285,6 +312,15 @@ const translations = {
 
     },
     ru: {
+        "map_notice": "Карта предоставлена Google Maps. При загрузке Google получит ваш IP-адрес и может установить файлы cookie.",
+        "map_load": "Загрузить карту",
+        "map_open_new": "Или открыть в новой вкладке",
+        "skip_to_content": "Перейти к содержанию",
+        "site_h1": "Villa del Conte – дома для отдыха в Санта-Доменика-ди-Рикади",
+        "form_privacy": "Я прочитал(а) и принимаю ",
+        "form_privacy_link": "политику конфиденциальности",
+        "form_privacy_end": " *",
+        "footer_privacy": "Конфиденциальность",
         
         "blog_read_more": "Читать далее →",
         "blog_toraldo_desc": "В самом сердце Побережья Богов, между скалами Тропеи и кристально чистыми пляжами Санта-Доменика-ди-Рикади, фигура императора Фридриха II переплетается со знатным родом Торальдо...",
@@ -380,6 +416,15 @@ const translations = {
 
     },
     de: {
+        "map_notice": "Die Karte wird von Google Maps bereitgestellt. Beim Laden erhält Google Ihre IP-Adresse und kann Cookies setzen.",
+        "map_load": "Karte laden",
+        "map_open_new": "Oder in einem neuen Tab öffnen",
+        "skip_to_content": "Zum Inhalt springen",
+        "site_h1": "Villa del Conte – Ferienhäuser in Santa Domenica di Ricadi, Costa degli Dei",
+        "form_privacy": "Ich habe die ",
+        "form_privacy_link": "Datenschutzerklärung",
+        "form_privacy_end": " gelesen und akzeptiert. *",
+        "footer_privacy": "Datenschutz",
         
         "blog_read_more": "Weiterlesen →",
         "blog_toraldo_desc": "Im Herzen der Küste der Götter, zwischen den Klippen von Tropea und den kristallklaren Stränden von Santa Domenica di Ricadi, verwebt sich die Figur von Kaiser Friedrich II. mit der Adelsfamilie Toraldo...",
@@ -475,6 +520,15 @@ const translations = {
 
     },
     zh: {
+        "map_notice": "地图由 Google Maps 提供。加载后 Google 将获得您的 IP 地址，并可能设置 cookie。",
+        "map_load": "加载地图",
+        "map_open_new": "或在新标签页中打开",
+        "skip_to_content": "跳至内容",
+        "site_h1": "Villa del Conte – 位于里卡迪圣多梅尼卡（众神海岸）的度假屋",
+        "form_privacy": "我已阅读并接受",
+        "form_privacy_link": "隐私政策",
+        "form_privacy_end": " *",
+        "footer_privacy": "隐私政策",
         
         "blog_read_more": "阅读更多 →",
         "blog_toraldo_desc": "在诸神海岸的中心，Tropea的悬崖和Santa Domenica di Ricadi清澈的海滩之间，皇帝腓特烈二世的形象与高贵的Toraldo家族交织在一起...",

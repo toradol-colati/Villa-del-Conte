@@ -339,6 +339,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const dict = window.translations[currentLang];
         if (!dict) return;
 
+        // Gli screen reader scelgono la pronuncia da qui: senza questo
+        // aggiornamento leggerebbero ogni lingua con le regole dell'italiano.
+        document.documentElement.setAttribute('lang', currentLang);
+
         const elementsToTranslate = document.querySelectorAll('[data-i18n]');
         elementsToTranslate.forEach(el => {
             const key = el.getAttribute('data-i18n');
@@ -355,6 +359,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Apply immediately
     applyLanguage();
+
+    // === MAPPA: caricamento solo su richiesta (nessun cookie di terze parti prima del consenso) ===
+    const mapBtn = document.getElementById('map-load-btn');
+    if (mapBtn) {
+        mapBtn.addEventListener('click', () => {
+            const holder = document.getElementById('map-placeholder');
+            if (!holder) return;
+            const frame = document.createElement('iframe');
+            frame.src = 'https://www.google.com/maps/d/u/0/embed?mid=1N9-ZXD5SFWVKBu3uGtndcMVf3Pq2_E4&ehbc=2E312F&noprof=1';
+            frame.width = '640';
+            frame.height = '480';
+            frame.loading = 'lazy';
+            frame.title = 'Mappa della zona di Villa del Conte';
+            frame.referrerPolicy = 'no-referrer-when-downgrade';
+            holder.replaceWith(frame);
+        });
+    }
 
     // === INTERSECTION OBSERVER FOR SMART SCROLLING ===
     const observerOptions = {

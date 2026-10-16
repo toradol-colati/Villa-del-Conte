@@ -1,3 +1,23 @@
 User-agent: *
 Allow: /
+
+# Crawler dei motori di risposta AI: esplicitamente ammessi
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://villa-del-conte.com/sitemap.xml

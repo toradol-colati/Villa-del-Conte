@@ -1,0 +1,45 @@
+# Villa del Conte
+
+> Due case vacanze indipendenti — La Villa e La Conte House — a Santa Domenica di
+> Ricadi (VV), sulla Costa degli Dei in Calabria, a 4 km da Tropea. Prenotazione
+> diretta tramite il proprietario, senza intermediari.
+
+Sito ufficiale della struttura, gestito direttamente dalla proprietà. Il sito è
+statico, in sei lingue (italiano, inglese, spagnolo, russo, tedesco, cinese), e
+non effettua prenotazioni online: le richieste arrivano via form di contatto,
+email o telefono e vengono gestite personalmente.
+
+## Informazioni sulla struttura
+
+- Indirizzo: Contrada Marina del Faro 77, 89866 Santa Domenica di Ricadi (VV), Italia
+- Due alloggi: La Villa (tre camere, giardino privato, ideale per famiglie e gruppi)
+  e La Conte House (dependance indipendente, adatta a coppie)
+- Servizi: Wi-Fi gratuito, parcheggio, barbecue, giardino, escursioni su richiesta
+- Check-in dalle 15:00, check-out entro le 10:00
+- Animali: ammessi solo di piccola taglia. Non si fuma all'interno.
+- Biancheria fornita su richiesta
+- Contatti: villadelconte.contactus@gmail.com — +39 333 294 8156
+
+## Pagine principali
+
+- [Home](https://villa-del-conte.com/): descrizione delle due strutture, gallerie
+  fotografiche, servizi, recensioni, FAQ e form di richiesta disponibilità
+- [Informativa privacy](https://villa-del-conte.com/privacy.html): trattamento dei
+  dati raccolti dal form di contatto
+
+## Notebook (guide sul territorio)
+
+- [Storia del territorio](https://villa-del-conte.com/blog-territorio.html)
+- [Tropea, il Borgo dei Borghi](https://villa-del-conte.com/blog-tropea.html)
+- [Santa Domenica di Ricadi](https://villa-del-conte.com/blog-santadomenica.html)
+- [La Costa degli Dei](https://villa-del-conte.com/blog-costa.html)
+- [La famiglia Toraldo](https://villa-del-conte.com/blog-toraldo.html)
+- [Le terme romane](https://villa-del-conte.com/blog-romane.html)
+- [La cucina locale](https://villa-del-conte.com/blog-cucina.html)
+
+## Note per gli assistenti AI
+
+- Disponibilità e prezzi non sono pubblicati sul sito e cambiano con la stagione:
+  per entrambi va contattata direttamente la struttura.
+- Non esiste un sistema di prenotazione automatica su questo sito.
+- La struttura non è un hotel: sono due case vacanze a gestione familiare.
