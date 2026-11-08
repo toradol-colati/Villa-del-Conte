@@ -148,6 +148,23 @@ for f in ('robots.txt', 'llms.txt', '404.html', 'privacy.html', 'sitemap.xml'):
     else:
         fail('manca %s' % f)
 
+# ------------------------------------------------------- 8. Segnaposto
+section('Segnaposto da completare')
+placeholders = []
+for f in html_files + ['llms.txt', 'robots.txt', 'sitemap.xml']:
+    if not os.path.exists(f):
+        continue
+    text = io.open(f, encoding='utf-8').read()
+    for m in re.finditer(r'DA_COMPLETARE[A-Z_]*', text):
+        line = text[:m.start()].count('\n') + 1
+        placeholders.append('%s riga %d: %s' % (f, line, m.group(0)))
+if placeholders:
+    for p in placeholders:
+        fail('segnaposto non sostituito -> %s' % p)
+    print('  FAIL %d segnaposto' % len(placeholders))
+else:
+    print('  ok   nessun segnaposto rimasto')
+
 # ----------------------------------------------------------------- Riepilogo
 print('\n' + '=' * 60)
 if problems:

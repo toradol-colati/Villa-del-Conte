@@ -26,6 +26,8 @@ email o telefono e vengono gestite personalmente.
   fotografiche, servizi, recensioni, FAQ e form di richiesta disponibilità
 - [Informativa privacy](https://villa-del-conte.com/privacy.html): trattamento dei
   dati raccolti dal form di contatto
+- [Note legali](https://villa-del-conte.com/note-legali.html): titolare, CIN delle
+  strutture, natura informativa del sito
 
 ## Notebook (guide sul territorio)
 

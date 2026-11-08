@@ -1,5 +1,7 @@
 const translations = {
     it: {
+        "footer_legal": "Note legali",
+        "footer_rights": "Tutti i diritti riservati.",
         "map_notice": "La mappa è fornita da Google Maps. Caricandola accetti che Google riceva il tuo indirizzo IP e possa impostare cookie.",
         "map_load": "Carica la mappa",
         "map_open_new": "Oppure aprila in una nuova scheda",
@@ -104,6 +106,8 @@ const translations = {
 
     },
     en: {
+        "footer_legal": "Legal notice",
+        "footer_rights": "All rights reserved.",
         "map_notice": "The map is provided by Google Maps. Loading it means Google receives your IP address and may set cookies.",
         "map_load": "Load the map",
         "map_open_new": "Or open it in a new tab",
@@ -208,6 +212,8 @@ const translations = {
 
     },
     es: {
+        "footer_legal": "Aviso legal",
+        "footer_rights": "Todos los derechos reservados.",
         "map_notice": "El mapa lo proporciona Google Maps. Al cargarlo, Google recibe tu dirección IP y puede instalar cookies.",
         "map_load": "Cargar el mapa",
         "map_open_new": "O ábrelo en una pestaña nueva",
@@ -312,6 +318,8 @@ const translations = {
 
     },
     ru: {
+        "footer_legal": "Юридическая информация",
+        "footer_rights": "Все права защищены.",
         "map_notice": "Карта предоставлена Google Maps. При загрузке Google получит ваш IP-адрес и может установить файлы cookie.",
         "map_load": "Загрузить карту",
         "map_open_new": "Или открыть в новой вкладке",
@@ -416,6 +424,8 @@ const translations = {
 
     },
     de: {
+        "footer_legal": "Impressum",
+        "footer_rights": "Alle Rechte vorbehalten.",
         "map_notice": "Die Karte wird von Google Maps bereitgestellt. Beim Laden erhält Google Ihre IP-Adresse und kann Cookies setzen.",
         "map_load": "Karte laden",
         "map_open_new": "Oder in einem neuen Tab öffnen",
@@ -520,6 +530,8 @@ const translations = {
 
     },
     zh: {
+        "footer_legal": "法律声明",
+        "footer_rights": "版权所有。",
         "map_notice": "地图由 Google Maps 提供。加载后 Google 将获得您的 IP 地址，并可能设置 cookie。",
         "map_load": "加载地图",
         "map_open_new": "或在新标签页中打开",

@@ -262,31 +262,32 @@
                         risponderemo tempestivamente.</p>
 
                     <form action="https://formspree.io/f/xqeygjwd" method="POST" class="booking-form">
+                        <input type="hidden" name="_subject" value="Richiesta disponibilità da villa-del-conte.com">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email" data-i18n="form_email">Email *</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone" data-i18n="form_phone">Telefono *</label>
-                                <input type="tel" id="phone" name="phone" required>
+                                <input type="tel" id="phone" name="Telefono" autocomplete="tel" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="checkin" data-i18n="form_checkin">Check-in</label>
-                                <input type="date" id="checkin" name="checkin">
+                                <input type="date" id="checkin" name="Check-in">
                             </div>
                             <div class="form-group">
                                 <label for="checkout" data-i18n="form_checkout">Check-out</label>
-                                <input type="date" id="checkout" name="checkout">
+                                <input type="date" id="checkout" name="Check-out">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="structure" data-i18n="form_structure">Struttura di interesse</label>
-                            <select id="structure" name="structure">
+                            <select id="structure" name="Struttura">
                                 <option value="La Villa" data-i18n="form_opt_villa">La Villa</option>
                                 <option value="La Conte House" data-i18n="form_opt_conte">La Conte House</option>
                                 <option value="Entrambe" data-i18n="form_opt_both">Entrambe (Intera Proprietà)</option>
@@ -296,13 +297,13 @@
 
                         <div class="form-group">
                             <label for="message" data-i18n="form_msg">Messaggio / Richieste speciali *</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" name="Messaggio" rows="4" required></textarea>
                         </div>
 
                         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"
                             aria-hidden="true">
                         <div class="form-group-consent">
-                            <input type="checkbox" id="privacy-consent" name="privacy_consent" required>
+                            <input type="checkbox" id="privacy-consent" name="Consenso privacy" value="accettato" required>
                             <label for="privacy-consent"><span data-i18n="form_privacy">Ho letto e accetto
                                     l'</span><a href="/privacy.html" target="_blank" rel="noopener"
                                     data-i18n="form_privacy_link">informativa privacy</a><span
@@ -612,7 +613,6 @@
                     <li><a href="#"
                             onclick="window.scrollTo({top: 0, behavior: 'smooth'}); document.getElementById('tab-blog').click(); return false;"
                             data-i18n="nav_blog">Notebook</a></li>
-                    <li><a href="/privacy.html" data-i18n="footer_privacy">Privacy</a></li>
                 </ul>
             </div>
 
@@ -644,7 +644,16 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Villa del Conte. Tutti i diritti riservati.</p>
+                <p>&copy; 2026 Villa del Conte. <span data-i18n="footer_rights">Tutti i diritti riservati.</span></p>
+                <p class="footer-legal">
+                    <span class="footer-cin">CIN La Villa DA_COMPLETARE_CIN_VILLA &middot;
+                        CIN La Conte House DA_COMPLETARE_CIN_CONTE</span>
+                    <span class="footer-legal-links">
+                        <a href="/privacy.html" data-i18n="footer_privacy">Privacy</a>
+                        <span aria-hidden="true">&middot;</span>
+                        <a href="/note-legali.html" data-i18n="footer_legal">Note legali</a>
+                    </span>
+                </p>
             </div>
         </div>
     </footer>

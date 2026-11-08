@@ -1746,3 +1746,32 @@ textarea:focus-visible,
     color: #1d3b2a;
     text-decoration: underline;
 }
+
+/* ===== RIGA LEGALE IN FONDO AL FOOTER ===== */
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px 18px;
+    margin: 10px 0 0 0;
+    font-size: 0.8em;
+    line-height: 1.6;
+    opacity: 0.65;
+}
+
+.footer-legal a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.footer-legal a:hover {
+    opacity: 1;
+}
+
+.footer-legal-links {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
