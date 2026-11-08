@@ -165,6 +165,24 @@ if placeholders:
 else:
     print('  ok   nessun segnaposto rimasto')
 
+# Promemoria non bloccante: dati legali previsti ma non ancora inseriti.
+# Il CIN delle strutture ricettive va esposto (art. 13-ter D.L. 145/2023).
+pending = []
+if os.path.exists('note-legali.html'):
+    legal = io.open('note-legali.html', encoding='utf-8').read()
+    n_cin = len(re.findall(r'<td><span class="da-riempire">', legal))
+    if n_cin:
+        pending.append('note-legali.html: %d CIN ancora da inserire (obbligatorio esporlo)' % n_cin)
+    if '<!-- Codice fiscale' in legal:
+        pending.append('note-legali.html: riga del codice fiscale ancora commentata')
+if os.path.exists('index.html'):
+    if '<!-- CIN: sostituire' in io.open('index.html', encoding='utf-8').read():
+        pending.append('index.html: riga CIN nel footer ancora commentata')
+for p in pending:
+    notes.append(p)
+if pending:
+    print('  nota %d dati legali ancora da inserire (non bloccante)' % len(pending))
+
 # ----------------------------------------------------------------- Riepilogo
 print('\n' + '=' * 60)
 if problems:
